@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-collection: portfolio
+title: "İlk Yapay Zeka Projesi"
+excerpt: "Bu proje, derin öğrenme temellerini pekiştirmek için kullanılmıştır."
+collection: portfolio # Bu alanın 'portfolio' olması kritik.
+permalink: /portfolio/proje-adiniz/ # Her portfolyo öğesi için bu alanı kontrol edin!
+date: 2025-11-20
 ---
-
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
