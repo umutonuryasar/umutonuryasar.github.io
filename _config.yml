@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Umut Onur Yaşar / AI/ML Engineer"
+title                    : ""
 title_separator          : "-"
 name                     : &name "Umut Onur Yaşar"  # Update this with your name
-description              : &description "Electrical and Electronics Engineer and Artificial Intelligence (AI) / Machine Learning (ML) specialist candidate. Projects, technical articles, and academic development roadmap"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Electrical and Electronics Engineer dedicated to mastering AI/ML, focusing on Deep Learning, Computer Vision and Reinforcement Learning."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://umutonuryasar.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Umut Onur Yaşar"
   pronouns         : # example: "she/her"  
-  bio              : "Electrical and Electronics Engineer dedicated to mastering AI/ML, focusing on Deep Learning and Reinforcement Learning for advanced control systems."
+  bio              : "Electrical and Electronics Engineer dedicated to mastering AI/ML, focusing on Deep Learning, Computer Vision and Reinforcement Learning."
   location         : "Ankara, Türkiye"
   employer         : "Self-Employed"
   uri              : "https://umutonuryasar.com"
@@ -221,33 +221,15 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   deep_dives:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -255,43 +237,25 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  #_deep_dives
   - scope:
       path: ""
-      type: teaching
+      type: deep_dives
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _publications
+  #_projects
   - scope:
       path: ""
-      type: publications
+      type: projects
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
-
+      
 # Sass/SCSS
 sass:
   sass_dir: _sass

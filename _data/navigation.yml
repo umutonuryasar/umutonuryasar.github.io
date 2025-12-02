@@ -1,4 +1,6 @@
+# Navigation configuration file
 # The following is the order of the links in the header of the website.
+
 main:
   - title: "Home"
     url: /
@@ -6,27 +8,14 @@ main:
   - title: "AI/ML Roadmap"
     url: /roadmap/
 
-  - title: "Technical Deep Dives"
-    url: /deep_dives/
+  - title: "Research & Projects" 
+    url: /projects/
 
-  - title: "Projects (Portfolio)"
-    url: /portfolio/
+  - title: "Technical Deep Dives" 
+    url: /deep_dives/
     
-  - title: "CV"
+  - title: "CV/Resume"
     url: /cv/
 
-  - title: "About Me"
+  - title: "About/Contact"
     url: /about/
-
-  # --- Düşük Öncelikli/Kaldırılanlar (Yorum Satırı Yapıldı) ---
-  # - title: "Talks"
-  #   url: /talks/    
-
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
-  # - title: "Guide"
-  #   url: /markdown/
