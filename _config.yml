@@ -29,7 +29,7 @@ author:
   bio              : "Electrical and Electronics Engineer dedicated to mastering AI/ML, focusing on Deep Learning, Computer Vision and Reinforcement Learning."
   location         : "Ankara, Türkiye"
   employer         : "Self-Employed"
-  uri              : "https://umutonuryasar.com"
+  uri              : # "https://umutonuryasar.com"
   email            : "umutonuryasar@gmail.com" 
 
   # Academic websites
@@ -243,7 +243,7 @@ defaults:
       type: deep_dives
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comments: true
   #_projects

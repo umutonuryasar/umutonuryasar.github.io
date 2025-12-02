@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "AI/ML Roadmap: Targeting Doctoral-Level Expertise in CV & RL"
+title: "AI/ML Roadmap"
 permalink: /roadmap/
 author_profile: false
 ---
