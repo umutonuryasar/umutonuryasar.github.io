@@ -17,5 +17,5 @@ main:
   - title: "CV/Resume"
     url: /cv/
 
-  - title: "About/Contact"
-    url: /about/
+  #- title: "About/Contact"
+  #  url: /about/

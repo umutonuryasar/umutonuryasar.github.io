@@ -9,8 +9,8 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Umut Onur Yaşar - AI/ML Engineer"
-title_separator          : "-"
+title                    : # "Umut Onur Yaşar"
+title_separator          : # "-"
 name                     : &name "Umut Onur Yaşar"  # Update this with your name
 description              : &description "Electrical and Electronics Engineer dedicated to mastering AI/ML, focusing on Deep Learning and Computer Vision."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://umutonuryasar.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
@@ -28,7 +28,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Electrical and Electronics Engineer dedicated to mastering AI/ML, focusing on Deep Learning and Computer Vision."
   location         : "Ankara, Türkiye"
-  employer         : "Self-Employed"
+  employer         : # "Self-Employed"
   uri              : # "https://umutonuryasar.com"
   email            : "umutonuryasar@gmail.com" 
 
