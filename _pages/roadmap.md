@@ -7,47 +7,69 @@ author_profile: false
 
 ### Vision Statement
 
-My objective is to achieve **Doctoral-level expertise** in specialized Artificial Intelligence domains, leveraging my **Electrical and Electronics Engineering** foundation. The focus is on **Computer Vision (CV)** and **Reinforcement Learning (RL)**, applied to complex dynamic and spatial systems. My progress will be measured through production-grade projects and peer-reviewed quality technical deep dives.
+My objective is to build **research-grade expertise** in efficient deep learning and computer vision, grounded in an **Electrical and Electronics Engineering** foundation. The focus is on **model compression**, **object detection architectures**, and **applied AI research** — producing work that is both theoretically rigorous and deployment-ready.
+
+Progress is measured through production-grade projects, ablation studies, and peer-reviewed quality technical deep dives.
 
 ---
 
-## Phase I: Foundational Mastery
+## Phase I: Foundational Mastery ✓
 
-**Goal:** Solidify core ML principles and advanced mathematics essential for Deep Learning.
+**Goal:** Solidify core ML principles and the mathematical foundations of deep learning.
 
-| Focus Area | Core Concepts & Disciplines | Key Output/Deliverable |
+| Focus Area | Core Concepts | Key Output |
 | :--- | :--- | :--- |
-| **Applied Mathematics** | Linear Algebra for DL, Multivariable Calculus (Jacobian, Hessian), Optimization Theory. | [Deep Dive]: **The Calculus of Loss Functions and Backpropagation.** |
-| **Core ML & Statistics** | Supervised/Unsupervised (Regression, SVM, Clustering), Probability (Bayesian Methods). | [Project]: **Statistical Model for E-E Time Series Data** (e.g., Load Forecasting). |
-| **Python & Libraries** | Python OOP & Efficiency, NumPy/Pandas, Git/GitHub Mastery. | Fully version-controlled project repository, demonstrated clean code. |
-
-## Phase II: Deep Learning Specialization (The Core)
-
-**Goal:** Master the architectures and frameworks (PyTorch/TensorFlow) required for the target fields (CV/RL).
-
-### 🛠️ Sub-Focus A: Computer Vision (CV) Foundation
-
-| Focus Area | Core CV Architectures & Techniques | Key Output/Deliverable |
-| :--- | :--- | :--- |
-| **CNN Mastery** | Convolutional Layers, Pooling, Transfer Learning (ResNet, VGG). | [Deep Dive]: **Analyzing Weight Initialization Schemes in CNNs.** |
-| **Advanced Vision** | Object Detection (YOLO/R-CNN), Semantic Segmentation (U-Net). | [Project]: **Custom Object Detector** using a modern framework (e.g., PyTorch Lightning). |
-| **Vision Transformers** | ViT Architecture, Attention Mechanism (Self-Attention). | [Project]: Implement **Vision Transformer (ViT)** for image classification. |
-
-### 🤖 Sub-Focus B: Reinforcement Learning (RL) Foundation
-
-| Focus Area | Core RL Algorithms & Theory | Key Output/Deliverable |
-| :--- | :--- | :--- |
-| **Value-Based RL** | Markov Decision Processes (MDPs), Dynamic Programming, Q-Learning, DQN. | [Project]: **DQN Agent for a Classic Control Task** (e.g., CartPole). |
-| **Policy-Based RL** | Policy Gradients (REINFORCE), Actor-Critic Methods (A2C/A3C). | [Deep Dive]: **The Policy Gradient Theorem and its Derivation.** |
-
-## Phase III: Doctoral-Level Synthesis & Application
-
-**Goal:** Combine CV and RL expertise to tackle complex, novel problems and produce research-quality work.
-
-| Focus Area | High-Level Application & Research Focus | Key Output/Deliverable |
-| :--- | :--- | :--- |
-| **RL + Vision** | Using vision as input for RL agents (e.g., training an agent to play a game from screen input). | [Project]: **Deep RL Agent** capable of navigating a simulated environment using pixel data. |
-| **Advanced DL** | Generative Models (GANs/Diffusion Models), Model Interpretability (XAI). | [Deep Dive/Manuscript]: **Comparison of Explanatory Methods (LIME/SHAP) on a CV model.** |
-| **Research Synthesis** | Identifying a novel research gap in the intersection of E-E, CV, and RL (e.g., using RL for optimizing vision processing in embedded systems). | **High-Quality Manuscript (Pre-Print)** submitted to the 'Pre-Prints / Working Papers' section. |
+| **Applied Mathematics** | Linear algebra for DL, multivariable calculus, optimization theory | Deep Dive: *The Calculus of Loss Functions and Backpropagation* |
+| **Core ML & Statistics** | Supervised/unsupervised learning, probability, Bayesian methods | IBM AI Engineering Professional Certificate (Coursera) |
+| **Algorithms** | Complexity, data structures, dynamic programming | Stanford Algorithms Specialization (Coursera) |
+| **Python & Tools** | NumPy, PyTorch basics, Git | Version-controlled project repositories |
 
 ---
+
+## Phase II: Deep Learning Specialization ✓ ✓ 🔄
+
+**Goal:** Master CV architectures and frameworks required for research-level work.
+
+### Computer Vision
+
+| Focus Area | Architectures & Techniques | Key Output |
+| :--- | :--- | :--- |
+| **CNN Mastery** | Convolutional layers, transfer learning (ResNet, VGG) | Deep Dive: *Weight Initialization Schemes in CNNs* |
+| **Object Detection** | YOLO, R-CNN, RT-DETR, DETR | Project: *Real-Time Object Detection* (GitHub) |
+| **Vision Transformers** | ViT, self-attention, cross-attention | Ongoing — RT-DETR architecture study |
+
+### Systems & Acceleration
+
+| Focus Area | Techniques | Key Output |
+| :--- | :--- | :--- |
+| **CUDA Programming** | Parallel computing, memory management, kernel optimization | NVIDIA: *Getting Started with Accelerated Computing in CUDA C/C++* |
+| **Embedded AI** | Real-time inference, edge constraints | Signal Processing Toolbox (C++ / Qt) |
+
+---
+
+## Phase III: Applied AI Research 🔬 *Current*
+
+**Goal:** Contribute original work at the intersection of model efficiency and computer vision.
+
+| Focus Area | Research Direction | Key Output |
+| :--- | :--- | :--- |
+| **Knowledge Distillation** | Logit-KD vs Feature-KD for object detectors, teacher-student dynamics | CS229 Project: *RT-DETR Distillation — 12-config ablation on COCO* |
+| **Model Compression** | Pruning, quantization, architecture search | Ongoing |
+| **Representation Learning** | Feature alignment, intermediate supervision | CS229 theoretical analysis |
+| **Benchmarking & MLOps** | FPS benchmarking, VRAM optimization, reproducibility | RTX 3050 → Colab → Kaggle GPU pipeline |
+
+---
+
+## Phase IV: Research Publication & Positioning 📄 *Next*
+
+**Goal:** Translate applied research into publishable work and establish a research identity.
+
+| Focus Area | Direction | Key Output |
+| :--- | :--- | :--- |
+| **Technical Writing** | Conference-style papers, ablation reporting | CS229 final report → arXiv pre-print |
+| **Open Source** | Well-documented repos, reproducible baselines | Public RT-DETR distillation codebase |
+| **Research Positioning** | Applied AI Scientist roles, research engineer track | Portfolio: umutonuryasar.com + GitHub |
+
+---
+
+*Last updated: March 2026*

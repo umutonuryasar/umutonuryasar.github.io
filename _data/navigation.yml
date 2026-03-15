@@ -4,18 +4,18 @@
 main:
   - title: "Home"
     url: /
-    
+
   - title: "AI/ML Roadmap"
     url: /roadmap/
 
-  - title: "Research/Projects" 
+  - title: "Research/Projects"
     url: /projects/
 
-  - title: "Technical Deep Dives" 
+  - title: "Technical Deep Dives"
     url: /deep_dives/
-    
+
   - title: "CV/Resume"
     url: /cv/
 
-  #- title: "About/Contact"
-  #  url: /about/
+  - title: "About"
+    url: /about/

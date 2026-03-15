@@ -145,6 +145,9 @@
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV/Resume</a></li>
           
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
@@ -227,101 +230,100 @@
       <section class="page__content" itemprop="text">
         <h2 id="introduction-why-linear-algebra-is-non-negotiable">Introduction: Why Linear Algebra is Non-Negotiable</h2>
 
-<p>As an <strong>Electrical and Electronics Engineer</strong> transitioning into the AI/ML domain, one of my key observations is that the perceived complexity in large datasets (like images or time-series signals) is often due to <strong>redundancy</strong>. The ability to abstract and simplify this complexity is crucial for building robust models. <strong>Linear Algebra</strong> provides the necessary toolkit for this structural analysis.</p>
+<p>A recurring observation in applied ML work is that the perceived complexity in large datasets — images, time-series signals, high-dimensional feature vectors — is largely due to <strong>redundancy</strong>. The ability to decompose and simplify this structure is not just academically interesting; it’s operationally critical for building robust, efficient models.</p>
 
-<p>In this deep dive, I will focus on three powerful, interconnected tools that enable us to achieve this: <strong>Eigenvalues/Eigenvectors</strong>, <strong>Singular Value Decomposition (SVD)</strong>, and their culmination in <strong>Principal Component Analysis (PCA)</strong>.</p>
+<p><strong>Linear Algebra</strong> provides the toolkit for this structural analysis. This deep dive covers three powerful, interconnected tools: <strong>Eigenvalues/Eigenvectors</strong>, <strong>Singular Value Decomposition (SVD)</strong>, and their culmination in <strong>Principal Component Analysis (PCA)</strong>.</p>
 
 <hr />
 
-<h2 id="1eigenvectors--eigenvalues-the-foundation-of-transformations">1.Eigenvectors &amp; Eigenvalues: The Foundation of Transformations</h2>
+<h2 id="1-eigenvectors--eigenvalues-the-foundation-of-transformations">1. Eigenvectors &amp; Eigenvalues: The Foundation of Transformations</h2>
 
-<p>The Eigen-concept (from the German word <em>eigen</em>, meaning ‘own’ or ‘characteristic’) describes the <strong>inherent behavior</strong> of a linear transformation represented by a matrix.</p>
+<p>The Eigen-concept (from the German <em>eigen</em>, meaning ‘own’ or ‘characteristic’) describes the <strong>inherent behavior</strong> of a linear transformation represented by a matrix.</p>
 
-<h3 id="athe-core-idea-the-vectors-that-dont-turn">A.The Core Idea: The Vectors That Don’t Turn</h3>
+<h3 id="a-the-core-idea-the-vectors-that-dont-turn">A. The Core Idea: The Vectors That Don’t Turn</h3>
 
-<p>When a square matrix $\mathbf{A}$ acts upon a vector $\mathbf{v}$, the resulting vector $\mathbf{Av}$ typically changes both direction and magnitude. However, for a special set of vectors, the <strong>Eigenvectors</strong> ($\mathbf{v}$), the direction remains unchanged; only the magnitude scales by a factor, the <strong>Eigenvalue</strong> ($\lambda$).</p>
+<p>When a square matrix $\mathbf{A}$ acts upon a vector $\mathbf{v}$, the resulting vector $\mathbf{Av}$ typically changes both direction and magnitude. However, for a special set of vectors — the <strong>Eigenvectors</strong> ($\mathbf{v}$) — the direction remains unchanged; only the magnitude scales by a factor, the <strong>Eigenvalue</strong> ($\lambda$):</p>
 
 \[\mathbf{A}\mathbf{v} = \lambda\mathbf{v}\]
 
-<ul>
-  <li><strong>In Practice:</strong> In Machine Learning, the Eigenvectors of a <strong>Covariance Matrix</strong> represent the <strong>directions</strong> of maximum variance (or information) in the data, and the corresponding Eigenvalues quantify the <strong>amount</strong> of that variance.</li>
-</ul>
+<p><strong>In practice:</strong> In ML, the Eigenvectors of a <strong>Covariance Matrix</strong> represent the <strong>directions</strong> of maximum variance in the data, and the corresponding Eigenvalues quantify the <strong>amount</strong> of that variance. This is the geometric foundation of PCA.</p>
 
 <hr />
 
-<h2 id="2singular-value-decomposition-svd-the-generalizer">2.Singular Value Decomposition (SVD): The Generalizer</h2>
+<h2 id="2-singular-value-decomposition-svd-the-generalizer">2. Singular Value Decomposition (SVD): The Generalizer</h2>
 
-<p>While Eigendecomposition is limited to square matrices, <strong>Singular Value Decomposition (SVD)</strong> generalizes this concept to <strong>any matrix</strong> ($\mathbf{A}$), regardless of its shape (e.g., an $m \times n$ data matrix).</p>
+<p>Eigendecomposition is limited to square matrices. <strong>SVD</strong> generalizes this concept to <strong>any matrix</strong> $\mathbf{A}$ of shape $m \times n$ — which covers virtually every real-world data matrix.</p>
 
-<h3 id="athe-svd-formula">A.The SVD Formula</h3>
+<h3 id="a-the-svd-formula">A. The SVD Formula</h3>
 
-<p>SVD decomposes the original matrix $\mathbf{A}$ into three component matrices:</p>
+<p>SVD factorizes $\mathbf{A}$ into three component matrices:</p>
 
 \[\mathbf{A} = \mathbf{U} \mathbf{\Sigma} \mathbf{V}^T\]
 
 <ul>
-  <li>$\mathbf{U}$: A unitary matrix containing the <strong>left singular vectors</strong> (output space directions).</li>
-  <li>$\mathbf{\Sigma}$ (Sigma): A diagonal matrix containing the <strong>Singular Values</strong> ($\sigma$), which represent the magnitude of the variance along the singular vectors. These are the square roots of the Eigenvalues of $\mathbf{A}^T\mathbf{A}$.</li>
-  <li>$\mathbf{V}^T$: The transpose of a unitary matrix containing the <strong>right singular vectors</strong> (input space directions).</li>
+  <li>$\mathbf{U}$: Unitary matrix — <strong>left singular vectors</strong> (output space directions)</li>
+  <li>$\mathbf{\Sigma}$: Diagonal matrix — <strong>singular values</strong> $\sigma_i$, representing variance magnitude along each direction. Crucially, $\sigma_i = \sqrt{\lambda_i(\mathbf{A}^T\mathbf{A})}$</li>
+  <li>$\mathbf{V}^T$: Transpose of unitary matrix — <strong>right singular vectors</strong> (input space directions)</li>
 </ul>
 
-<h3 id="bapplication-image-compression-and-denoising">B.Application: Image Compression and Denoising</h3>
+<h3 id="b-application-image-compression-and-denoising">B. Application: Image Compression and Denoising</h3>
 
-<p>In Computer Vision (CV), an image is fundamentally a matrix of pixel values. SVD allows us to reconstruct the image using only the largest singular values. By discarding the small singular values, we effectively <strong>denoise</strong> the image and achieve <strong>compression</strong> while retaining the most visually critical structure. It’s a striking illustration of SVD’s power.</p>
+<p>In Computer Vision, an image is a matrix of pixel values. SVD enables <strong>low-rank approximation</strong>: by retaining only the top-$k$ singular values and discarding the rest, we reconstruct the image with a fraction of the original data. Small singular values correspond to fine noise and high-frequency detail — discarding them yields simultaneous <strong>compression</strong> and <strong>denoising</strong>, with minimal perceptual loss.</p>
+
+<p>This is not merely a textbook example — truncated SVD underlies techniques used in recommendation systems, collaborative filtering, and latent semantic analysis.</p>
 
 <hr />
 
-<h2 id="3principal-component-analysis-pca-synthesis-in-dimensionality-reduction">3.Principal Component Analysis (PCA): Synthesis in Dimensionality Reduction</h2>
+<h2 id="3-principal-component-analysis-pca-synthesis-in-dimensionality-reduction">3. Principal Component Analysis (PCA): Synthesis in Dimensionality Reduction</h2>
 
-<p><strong>Principal Component Analysis (PCA)</strong> is the most widespread application of both Eigendecomposition and SVD in ML. Its goal is to find a lower-dimensional subspace that captures the <strong>maximum possible variance</strong> of the high-dimensional data.</p>
+<p><strong>PCA</strong> is the most widespread application of both Eigendecomposition and SVD in ML. The goal: find a lower-dimensional subspace that captures the <strong>maximum possible variance</strong> of the original data.</p>
 
-<h3 id="athe-two-computational-paths-of-pca">A.The Two Computational Paths of PCA</h3>
+<h3 id="a-the-two-computational-paths">A. The Two Computational Paths</h3>
 
-<ol>
-  <li><strong>The Eigen-Approach (Conceptual):</strong>
-    <ul>
-      <li>PCA identifies the directions (Eigenvectors of the Covariance Matrix) that maximize variance. These Eigenvectors become the <strong>Principal Components</strong>.</li>
-      <li>The corresponding Eigenvalues indicate the variance explained by each component.</li>
-    </ul>
-  </li>
-  <li><strong>The SVD-Approach (Computational):</strong>
-    <ul>
-      <li>In practice, PCA is often computed more efficiently and reliably using SVD on the centered data matrix ($\mathbf{X}_{centered}$).</li>
-      <li>The <strong>right singular vectors ($\mathbf{V}$) of $\mathbf{X}_{centered}$</strong> are the Principal Components. This method is numerically more stable and is the preferred approach in modern libraries.</li>
-    </ul>
-  </li>
-</ol>
+<p><strong>Eigen-approach (conceptual):</strong>
+PCA identifies the Eigenvectors of the Covariance Matrix that maximize variance. These become the <strong>Principal Components</strong>, ordered by their corresponding Eigenvalues.</p>
 
-<h3 id="bimpact-on-aiml">B.Impact on AI/ML</h3>
+<p><strong>SVD-approach (computational):</strong>
+In practice, PCA is computed via SVD on the mean-centered data matrix $\mathbf{X}_{\text{centered}}$. The <strong>right singular vectors</strong> $\mathbf{V}$ are the Principal Components. This approach is numerically more stable — avoiding explicit covariance matrix computation — and is what modern libraries (scikit-learn, PyTorch) use under the hood.</p>
+
+<h3 id="b-impact-on-aiml">B. Impact on AI/ML</h3>
 
 <table>
   <thead>
     <tr>
       <th style="text-align: left">Application</th>
-      <th style="text-align: left">Rationale</th>
+      <th style="text-align: left">Why It Matters</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: left"><strong>Feature Engineering</strong></td>
-      <td style="text-align: left">Reduces dimensionality, mitigating the ‘<strong>curse of dimensionality</strong>’ in high-dimensional feature spaces.</td>
+      <td style="text-align: left">Reduces dimensionality, mitigating the <em>curse of dimensionality</em> in high-dimensional spaces</td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Data Visualization</strong></td>
-      <td style="text-align: left">Projects high-dimensional data onto 2D or 3D for human inspection and interpretability.</td>
+      <td style="text-align: left">Projects high-dimensional embeddings to 2D/3D for interpretability and debugging</td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Noise Filtering</strong></td>
-      <td style="text-align: left">Removing components associated with small Eigenvalues effectively filters out noise.</td>
+      <td style="text-align: left">Components associated with small Eigenvalues capture noise — discarding them regularizes the representation</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Computational Efficiency</strong></td>
+      <td style="text-align: left">Fewer dimensions → faster training, lower memory footprint, reduced overfitting risk</td>
     </tr>
   </tbody>
 </table>
 
 <hr />
 
-<h2 id="conclusion-and-the-road-ahead">Conclusion and The Road Ahead</h2>
+<h2 id="conclusion">Conclusion</h2>
 
-<p>Eigendecomposition and SVD are the fundamental mathematical tools that truly empower data analysis in ML. They don’t just reduce data; they reveal the <strong>intrinsic geometry</strong> and the <strong>underlying axes of variation</strong>.</p>
+<p>Eigendecomposition and SVD are not just mathematical abstractions — they are the computational substrate beneath some of the most important operations in modern ML: dimensionality reduction, data compression, noise filtering, and latent space analysis.</p>
+
+<p>Understanding them at this level — not just as API calls but as geometric transformations — is what separates engineers who apply ML tools from researchers who can diagnose, extend, and improve them.</p>
+
+<p>The next deep dive in this series examines <strong>the Calculus of Loss Functions and Backpropagation</strong> — where these linear algebra foundations meet optimization.</p>
 
 <hr />
 
@@ -394,7 +396,7 @@
         
 
 <div class="page__footer-copyright">
-  &copy; 2025 Umut Onur Yaşar
+  &copy; 2026 Umut Onur Yaşar
 </div>
 
       </footer>
@@ -407,6 +409,21 @@
 
 
 
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
   </body>

@@ -1,15 +1,39 @@
 ---
 layout: archive
-title: "Electrical and Electronics Engineer Focused on AI/ML Architecture Development"
+title: "Umut Onur Yaşar"
 permalink: /
 author_profile: true
 ---
 
-## Bridging EEE and AI: Machine Learning for Physical Systems
+## AI/ML Engineer · Deep Learning & Computer Vision
 
-Welcome. I am a **Machine Learning Engineer** with a strong background in **Electrical and Electronics Engineering**, focused on creating intelligent solutions that interact directly with the physical world. My core competencies are built upon advanced coursework in **Deep Learning**, specializing in the two critical pillars of autonomy:
+I work at the intersection of **model efficiency** and **real-world deployment** — designing, training, and optimizing neural networks with a focus on speed-accuracy trade-offs.
 
-* **Perception:** Designing and implementing Convolutional Neural Networks for advanced image processing, object recognition, and environmental sensing.
-* **Decision-Making:** Applying Reinforcement Learning algorithms to optimize control policies, solve sequential decision problems, and develop intelligent agents for robotics and complex dynamic systems.
+My background in **Electrical and Electronics Engineering** gives me a low-level intuition that complements high-level ML research: from CUDA kernel optimization to transformer architecture design, I can reason across the full stack.
 
-My engineering background uniquely enables me to handle both the algorithm design (software) and the **hardware integration and real-time performance optimization**.
+---
+
+### Current Work
+
+**Knowledge Distillation for RT-DETR** *(Stanford CS229 — 2025)*
+Compressing transformer-based object detectors without sacrificing accuracy. Teacher: RT-DETR-L (32M params) · Student: RT-DETR-S (17M params). Running a 12-configuration ablation grid on COCO comparing Logit-KD (KL divergence) and Feature-KD (encoder L2 + decoder cosine similarity) strategies.
+
+---
+
+### Research Interests
+
+- **Model Compression** — knowledge distillation, pruning, quantization
+- **Object Detection** — transformer-based architectures (RT-DETR, DETR variants)
+- **Efficient Inference** — CUDA optimization, edge deployment
+- **Representation Learning** — feature alignment, intermediate supervision
+
+---
+
+### Selected Projects
+
+| Project | Stack | Description |
+| :--- | :--- | :--- |
+| [RT-DETR Knowledge Distillation](#) | PyTorch · CUDA · COCO | Teacher-student framework for real-time object detection |
+| [Real-Time Object Detection](https://github.com/umutonuryasar/Real-Time-Object-Detection) | Python · YOLO · OpenCV | Real-time detection pipeline |
+| [Signal Processing Toolbox](https://github.com/umutonuryasar/Signal-Processing-Toolbox) | C++ · Qt · FFT | Filtering, Fourier analysis, waveform visualization |
+| [RF Propagation & Coverage Tool](https://github.com/umutonuryasar/RF-Propagation---Coverage-Tool) | Python | RF signal simulation and visualization |
