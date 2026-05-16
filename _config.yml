@@ -22,7 +22,7 @@ repository               : "umutonuryasar/umutonuryasar.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profile.png"
+  avatar           : "profile.png"
   name             : "Umut Onur Yaşar"
   pronouns         : # example: "she/her"  
   bio              : "Applied AI Researcher specializing in Deep Learning and Computer Vision."
