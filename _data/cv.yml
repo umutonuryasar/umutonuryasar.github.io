@@ -1,0 +1,62 @@
+# CV data for Academic Pages
+# Used by _pages/cv.md
+
+education:  
+  - degree: "CS229: Machine Learning (Stanford Online)"
+    institution: "Stanford University (Online)"
+    year: "2026"
+    note: "Final Project: Knowledge Distillation with ablation studies on CIFAR-10"
+
+  - degree: "B.Sc. in Electrical and Electronics Engineering"
+    institution: "Abant İzzet Baysal University"
+    year: "2011 – 2020"
+  
+experience:
+  - role: "AI Trainer"
+    company: "Outlier"
+    period: "May 2024 – Feb 2025"
+    location: "Ankara, Turkey"
+    description:
+      - "Fine-tuned large language models using Reinforcement Learning with Human Feedback (RLHF)."
+      - "Contributed to reward modeling, prompt optimization, and high-quality data generation."
+      - "Collaborated with engineering teams to improve model safety and usability."
+
+  - role: "Computer Vision Intern"
+    company: "HAVELSAN"
+    period: "Aug 2015 – Sep 2015"
+    location: "Ankara, Turkey"
+    description:
+      - "Developed a flight simulation interface using Python."
+      - "Applied OpenCV in computer vision projects."
+      - "Conducted research on the Robot Operating System (ROS)."
+
+  - role: "Avionics Intern"
+    company: "Turkish Aerospace Industries (TAI)"
+    period: "Jun 2014 – Jul 2014"
+    location: "Ankara, Turkey"
+    description:
+      - "Developed an image recognition system in MATLAB for identifying helicopter landing zones."
+      - "Created a 3D model of helicopter electrical cable placement using CATIA."
+      - "Contributed to avionics harness design process."
+
+skills:
+  - category: "Frameworks & Libraries"
+    items: "PyTorch · OpenCV · Ultralytics · NumPy · scikit-learn"
+  - category: "Languages"
+    items: "Python · MATLAB · C++"
+  - category: "Tools & Platforms"
+    items: "CUDA · Git · Linux"
+  - category: "Domains"
+    items: "Deep Learning · Computer Vision · Knowledge Distillation · Object Detection · RLHF"
+
+certifications:
+  - name: "IBM AI Engineering Professional Certificate"
+    issuer: "IBM / Coursera"
+  - name: "Integrate with Machine Learning APIs"
+    issuer: "Google Cloud"
+  - name: "Perform Foundational Data, ML, and AI Tasks in Google Cloud"
+    issuer: "Google Cloud"
+  - name: "Machine Learning"
+    issuer: "Coursera"
+  - name: "Explore ML Models with Explainable AI"
+    issuer: "Google Cloud"
