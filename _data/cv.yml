@@ -15,7 +15,7 @@ experience:
   - role: "AI Trainer"
     company: "Outlier"
     period: "May 2024 – Feb 2025"
-    location: "Ankara, Turkey"
+    location: "Ankara, Turkey (Remote)"
     description:
       - "Fine-tuned large language models using Reinforcement Learning with Human Feedback (RLHF)."
       - "Contributed to reward modeling, prompt optimization, and high-quality data generation."
@@ -47,7 +47,7 @@ skills:
   - category: "Tools & Platforms"
     items: "CUDA · Git · Linux"
   - category: "Domains"
-    items: "Deep Learning · Computer Vision · Knowledge Distillation · Object Detection · RLHF"
+    items: "Deep Learning · Computer Vision · Knowledge Distillation · Object Detection"
 
 certifications:
   - name: "IBM AI Engineering Professional Certificate"
