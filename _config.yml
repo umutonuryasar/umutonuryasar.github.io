@@ -12,7 +12,7 @@ site_theme               : "dirt" # The available themes options are "default", 
 title                    : "Umut Onur Yaşar"
 title_separator          : "-"
 name                     : &name "Umut Onur Yaşar"
-description              : &description "Applied AI Researcher | Deep Learning & Computer Vision"
+description              : &description "Applied AI Research Engineer."
 url                      : "https://umutonuryasar.com"
 baseurl                  : ""
 repository               : "umutonuryasar/umutonuryasar.github.io"
@@ -28,7 +28,7 @@ author:
   bio              : "Applied AI Research Engineer."
   location         : "Ankara, Türkiye"
   employer         :
-  uri              : "https://umutonuryasar.com"
+  uri              : #"https://umutonuryasar.com"
   email            :
 
   # Academic websites
