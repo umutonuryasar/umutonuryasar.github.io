@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Umut Onur Yaşar"
   pronouns         : # example: "she/her"  
-  bio              : "Applied AI Researcher specializing in Deep Learning and Computer Vision."
+  bio              : "Applied AI Research Engineer."
   location         : "Ankara, Türkiye"
   employer         :
   uri              : "https://umutonuryasar.com"
@@ -149,7 +149,7 @@ social:
   links:
     - "https://github.com/umutonuryasar"
     - "https://linkedin.com/in/umutonuryasar"
-    - "https://umutonuryasar.com"
+    # - "https://umutonuryasar.com"
     - "https://x.com/umutonuryasar"
 
 

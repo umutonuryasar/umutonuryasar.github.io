@@ -7,33 +7,28 @@ redirect_from:
   - /about.html
 ---
 
-I am an Electrical and Electronics Engineer working at the intersection of **Deep Learning** and **Computer Vision**. My research focuses on building efficient, scalable AI systems — from model architecture design to real-world deployment. I am particularly interested in knowledge distillation, object detection, and representation learning.
+I am an Electrical and Electronics Engineer working at the intersection of **Deep Learning** and **Computer Vision** — currently focused on building efficient, scalable AI systems across the full stack: from model architecture design and training to real-world deployment. My work spans knowledge distillation, object detection, and representation learning, with an emphasis on production-grade applied research.
 
-Beyond engineering, I am drawn to the Renaissance ideal of broad intellectual curiosity. I pursue ongoing study in Mathematics, Physics, Philosophy, and Music — disciplines that I find sharpen both analytical thinking and creative problem-solving.
+Beyond engineering, I am drawn to the Renaissance ideal of broad intellectual curiosity. I pursue ongoing study in Mathematics, Physics, Philosophy, and Music — disciplines that sharpen both analytical thinking and creative problem-solving.
 
 ## Research Interests
 
 - **Deep Learning** — efficient architectures, knowledge distillation, model compression
 - **Computer Vision** — object detection, image recognition, visual representation learning
-- **Applied AI** — bridging research with practical, production-grade systems
+- **Applied AI Research** — closing the gap between research advances and production systems
 
 ## Selected Projects
 
 **[Knowledge Distillation on CIFAR-10](https://github.com/umutonuryasar/kd-cifar10)**
-Conducted a systematic study on knowledge distillation with ablation experiments on teacher-student architectures using the CIFAR-10 benchmark. Investigated the effect of temperature scaling, intermediate feature alignment, and loss weighting on student model accuracy and generalization.
+Systematic study on knowledge distillation with ablation experiments on teacher-student architectures using the CIFAR-10 benchmark. Investigated the effect of temperature scaling, intermediate feature alignment, and loss weighting on student model accuracy and generalization.
 
 **[Object Detection with RT-DETR on COCO](https://github.com/umutonuryasar/rt-detr-kd)**
-Explored transformer-based real-time object detection using the RT-DETR architecture on the COCO dataset, analyzing trade-offs between detection speed and accuracy in resource-constrained settings.
+Explored transformer-based real-time object detection using RT-DETR on the COCO dataset, analyzing trade-offs between detection speed and accuracy in resource-constrained settings.
 
 ## Background
 
-I hold a degree in Electrical and Electronics Engineering and have developed a strong applied foundation in ML/AI through both academic work (including completion of Stanford's CS229) and hands-on project experience.
+I hold a degree in Electrical and Electronics Engineering and have built a strong applied research foundation in ML/AI through academic work (including Stanford's CS229) and hands-on project experience — with a focus on taking models from prototype to deployment.
 
 ## Get in Touch
 
-I am always open to research discussions, collaborations, or just exchanging ideas.
-
-- **GitHub:** [github.com/umutonuryasar](https://github.com/umutonuryasar)
-- **LinkedIn:** [linkedin.com/in/umutonuryasar](https://linkedin.com/in/umutonuryasar)
-- **Kaggle:** [kaggle.com/umutonuryasar](https://kaggle.com/umutonuryasar)
-- **Website:** [umutonuryasar.com](https://umutonuryasar.com)
+Open to research discussions, collaborations, or exchanging ideas.
