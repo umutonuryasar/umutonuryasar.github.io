@@ -2,11 +2,6 @@
 # Used by _pages/cv.md
 
 education:  
-  - degree: "CS229: Machine Learning (Stanford Online)"
-    institution: "Stanford University (Online)"
-    year: "2026"
-    note: "Final Project: Knowledge Distillation with ablation studies on CIFAR-10"
-
   - degree: "B.Sc. in Electrical and Electronics Engineering"
     institution: "Abant İzzet Baysal University"
     year: "2011 – 2020"
