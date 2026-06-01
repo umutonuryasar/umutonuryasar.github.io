@@ -6,5 +6,5 @@ excerpt: 'Systematic ablation study comparing Logit-KD and Feature-KD across Res
 date: 2026-05-26
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2605.31191'
-citation: 'Yaşar, U. O. (2026). &quot;Student Capacity Moderates Knowledge Distillation Effectiveness.&quot; <i>arXiv:2605.31191</i>.'
+citation: 'Yaşar, U. O. (2026). Student Capacity Moderates Knowledge Distillation Effectiveness. arXiv:2605.31191.'
 ---
