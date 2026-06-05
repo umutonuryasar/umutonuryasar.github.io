@@ -27,7 +27,7 @@ Explored transformer-based real-time object detection using RT-DETR on the COCO 
 
 ## Background
 
-I hold a degree in Electrical and Electronics Engineering and have built a strong applied research foundation in ML/AI through academic work (including Stanford's CS229) and hands-on project experience — with a focus on taking models from prototype to deployment.
+I hold a degree in Electrical and Electronics Engineering and have built a strong applied research foundation in ML/AI through academic work and hands-on project experience — with a focus on taking models from prototype to deployment.
 
 ## Get in Touch
 
