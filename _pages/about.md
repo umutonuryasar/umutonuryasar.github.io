@@ -22,11 +22,8 @@ Beyond engineering, I am drawn to the Renaissance ideal of broad intellectual cu
 **[detrflow — End-to-End RT-DETR Object Detection Pipeline](https://github.com/umutonuryasar/detrflow)**
 Production-ready object detection pipeline built on RT-DETR, achieving **AP = 47.9** on COCO val2017. Includes a FastAPI inference API, HuggingFace Space deployment, and benchmark scripts. Accompanied by a peer-reviewed publication on knowledge distillation for RT-DETR ([arXiv:2605.31191](https://arxiv.org/abs/2605.31191)).
 
-**[RT-DETR Knowledge Distillation](https://arxiv.org/abs/2605.31191)**
-Systematic ablation study on teacher-student knowledge distillation applied to RT-DETR on COCO. Investigated temperature scaling, intermediate feature alignment, and loss weighting strategies. Published on arXiv.
-
-**[Knowledge Distillation on CIFAR-10](https://github.com/umutonuryasar/kd-cifar10)**
-Ablation experiments on teacher-student architectures using the CIFAR-10 benchmark, analyzing the effect of temperature scaling, feature alignment, and loss weighting on student model accuracy and generalization.
+**[Student Capacity Moderates Knowledge Distillation Effectiveness](https://github.com/umutonuryasar/kd-capacity-gap)**
+Systematic study of Logit-KD and Feature-KD across three ResNet teacher-student pairs on CIFAR-10. Key finding: student capacity — not the teacher-student accuracy gap — is the primary moderating factor in KD effectiveness. Results reproduced across 3 seeds; interactive demo on HuggingFace Spaces.
 
 ## Background
 
