@@ -1,6 +1,6 @@
 ---
 title: "detrflow – End-to-End RT-DETR Object Detection Pipeline"
-excerpt: "A production-ready object detection pipeline built on RT-DETR, achieving AP=47.9 on COCO val2017. Features a deployed HuggingFace Space, FastAPI inference API, and an accompanying arXiv paper on knowledge distillation.<br/><img src='/images/detrflow-preview.png'>"
+excerpt: "A production-ready object detection pipeline built on RT-DETR, achieving AP=47.9 on COCO val2017. Features a deployed HuggingFace Space, FastAPI inference API, and an accompanying arXiv paper on knowledge distillation.<br/><img src='/images/detrflow-preview.png' style='max-width: 360px; width: 100%;'>"
 collection: portfolio
 ---
 
