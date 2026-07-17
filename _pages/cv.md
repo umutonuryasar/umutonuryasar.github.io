@@ -38,6 +38,16 @@ _{{ item.period }} · {{ item.location }}_
 
 ---
 
+## Open Source Contributions
+
+{% for item in site.data.cv.opensource %}
+**[{{ item.name }}]({{ item.link }})**
+{{ item.description }}
+
+{% endfor %}
+
+---
+
 ## Skills
 
 {% for item in site.data.cv.skills %}

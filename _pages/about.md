@@ -20,10 +20,15 @@ Beyond engineering, I am drawn to the Renaissance ideal of broad intellectual cu
 ## Selected Projects
 
 **[detrflow — End-to-End RT-DETR Object Detection Pipeline](https://github.com/umutonuryasar/detrflow)**
-Production-ready object detection pipeline built on RT-DETR, achieving **AP = 47.9** on COCO val2017. Includes a FastAPI inference API, HuggingFace Space deployment, and benchmark scripts. Accompanied by a peer-reviewed publication on knowledge distillation for RT-DETR ([arXiv:2605.31191](https://arxiv.org/abs/2605.31191)).
+Production-ready object detection pipeline built on RT-DETR, reproducing the pretrained baseline (**AP = 47.9** on COCO val2017). Includes a FastAPI inference API, HuggingFace Space deployment, and benchmark scripts. A systematic knowledge distillation study on RT-DETR is currently in progress as a companion project.
 
 **[Student Capacity Moderates Knowledge Distillation Effectiveness](https://github.com/umutonuryasar/kd-capacity-gap)**
-Systematic study of Logit-KD and Feature-KD across three ResNet teacher-student pairs on CIFAR-10. Key finding: student capacity — not the teacher-student accuracy gap — is the primary moderating factor in KD effectiveness. Results reproduced across 3 seeds; interactive demo on HuggingFace Spaces.
+Systematic study of Logit-KD and Feature-KD across three ResNet teacher-student pairs on CIFAR-10. Key finding: student capacity — not the teacher-student accuracy gap — is the primary moderating factor in KD effectiveness. Results reproduced across 3 seeds; interactive demo on HuggingFace Spaces. Published as an arXiv preprint ([arXiv:2605.31191](https://arxiv.org/abs/2605.31191)).
+
+## Open Source Contributions
+
+**[HuggingFace PEFT — PR #3293](https://github.com/huggingface/peft/pull/3293)**
+Fixed a CUDA memory caching bug in the PEFT library; reviewed and merged into the main branch.
 
 ## Background
 
@@ -31,4 +36,4 @@ I hold a degree in Electrical and Electronics Engineering and have built a stron
 
 ## Get in Touch
 
-Open to research discussions, collaborations, or exchanging ideas.
+Open to research discussions, collaborations, or exchanging ideas. You can reach me via [GitHub](https://github.com/umutonuryasar) or [LinkedIn](https://www.linkedin.com/in/umutonuryasar).

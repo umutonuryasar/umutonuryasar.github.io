@@ -1,6 +1,6 @@
 ---
 title: "Student Capacity Moderates Knowledge Distillation Effectiveness"
-excerpt: "Systematic study of knowledge distillation across ResNet teacher-student pairs on CIFAR-10. Identifies student capacity — not teacher-student accuracy gap — as the key moderating factor in KD effectiveness. Accompanied by a peer-reviewed arXiv publication."
+excerpt: "Systematic study of knowledge distillation across ResNet teacher-student pairs on CIFAR-10. Identifies student capacity — not teacher-student accuracy gap — as the key moderating factor in KD effectiveness. Published as an arXiv preprint."
 collection: portfolio
 ---
 
@@ -32,4 +32,4 @@ Python · PyTorch · CIFAR-10 · ResNet-18/34/50 · NVIDIA A100
 
 ## Links
 
-[GitHub Repository](https://github.com/umutonuryasar/kd-capacity-gap) · [arXiv Paper](https://arxiv.org/abs/2605.31191) · [HuggingFace Space](https://huggingface.co/spaces/umutonuryasar/kd-capacity-gap)
+[GitHub Repository](https://github.com/umutonuryasar/kd-capacity-gap) · [arXiv Preprint](https://arxiv.org/abs/2605.31191) · [HuggingFace Space](https://huggingface.co/spaces/umutonuryasar/kd-capacity-gap)

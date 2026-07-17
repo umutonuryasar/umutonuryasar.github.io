@@ -34,6 +34,11 @@ experience:
       - "Created a 3D model of helicopter electrical cable placement using CATIA."
       - "Contributed to avionics harness design process."
 
+opensource:
+  - name: "HuggingFace PEFT"
+    link: "https://github.com/huggingface/peft/pull/3293"
+    description: "Fixed a CUDA memory caching bug (PR #3293); reviewed and merged into the main branch."
+
 skills:
   - category: "Frameworks & Libraries"
     items: "PyTorch · OpenCV · Ultralytics · NumPy · scikit-learn"
@@ -47,11 +52,3 @@ skills:
 certifications:
   - name: "IBM AI Engineering Professional Certificate"
     issuer: "IBM / Coursera"
-  - name: "Integrate with Machine Learning APIs"
-    issuer: "Google Cloud"
-  - name: "Perform Foundational Data, ML, and AI Tasks in Google Cloud"
-    issuer: "Google Cloud"
-  - name: "Machine Learning"
-    issuer: "Coursera"
-  - name: "Explore ML Models with Explainable AI"
-    issuer: "Google Cloud"

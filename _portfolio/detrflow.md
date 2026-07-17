@@ -1,6 +1,6 @@
 ---
 title: "detrflow – End-to-End RT-DETR Object Detection Pipeline"
-excerpt: "A production-ready object detection pipeline built on RT-DETR, achieving AP=47.9 on COCO val2017. Features a deployed HuggingFace Space, FastAPI inference API, and an accompanying arXiv paper on knowledge distillation.<br/><img src='/images/detrflow-preview.png' style='max-width: 360px; width: 100%;'>"
+excerpt: "A production-ready object detection pipeline built on RT-DETR, reproducing the pretrained baseline (AP=47.9 on COCO val2017). Features a deployed HuggingFace Space, FastAPI inference API, and benchmark tooling.<br/><img src='/images/detrflow-preview.jpg' style='max-width: 360px; width: 100%;'>"
 collection: portfolio
 ---
 
@@ -8,7 +8,7 @@ collection: portfolio
 
 **detrflow** is a fully end-to-end object detection pipeline built on [RT-DETR](https://arxiv.org/abs/2304.08069) (Real-Time Detection Transformer), covering everything from data loading and training to evaluation, serving, and deployment.
 
-The project demonstrates a complete applied ML workflow — from pretrained baseline evaluation to a live inference API — and is accompanied by a peer-reviewed arXiv publication on knowledge distillation for RT-DETR.
+The project demonstrates a complete applied ML workflow — from pretrained baseline evaluation to a live inference API. A systematic knowledge distillation study on RT-DETR is in progress as a companion project.
 
 ## Key Results
 
@@ -32,10 +32,9 @@ The project demonstrates a complete applied ML workflow — from pretrained base
 
 ## Links
 
-- 📄 **arXiv Paper:** [RT-DETR Knowledge Distillation (arXiv:2605.31191)](https://arxiv.org/abs/2605.31191)
 - 💻 **GitHub Repository:** [github.com/umutonuryasar/detrflow](https://github.com/umutonuryasar/detrflow)
 - 🤗 **HuggingFace Space:** [huggingface.co/spaces/umutonuryasar/detrflow](https://huggingface.co/spaces/umutonuryasar/detrflow)
 
 ## Related Work
 
-This project builds on the RT-DETR architecture and serves as the empirical foundation for the accompanying knowledge distillation study. The distillation experiments explore teacher-student training dynamics on top of the pretrained RT-DETR backbone, with ablations reported in the paper.
+This project builds on the RT-DETR architecture and serves as the empirical foundation for an ongoing knowledge distillation study on RT-DETR. A related, completed study on KD dynamics across ResNet teacher-student pairs is available as an arXiv preprint ([arXiv:2605.31191](https://arxiv.org/abs/2605.31191)).
