@@ -2,6 +2,7 @@
 title: "I Argued Softmax KL Was Wrong for Detection Distillation. Then I Ran the Control."
 date: 2026-08-06
 permalink: /posts/2026/08/rt-detr-kd-sigmoid-softmax/
+hidden: true
 description: "Argued sigmoid-trained RT-DETR logits need binary KL, not softmax KL, for distillation. Ran the softmax control anyway — it won. A case study in what a control run catches that a clean derivation doesn't."
 tags:
   - knowledge distillation

@@ -20,9 +20,6 @@ main:
   - title: "Portfolio"
     url: /portfolio/
         
-  - title: "RT-DETR KD"
-    url: /rt-detr-kd/
-
   - title: "Blog Posts"
     url: /year-archive/
     

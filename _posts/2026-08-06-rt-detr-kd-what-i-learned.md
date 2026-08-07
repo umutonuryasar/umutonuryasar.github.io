@@ -2,6 +2,7 @@
 title: "What I Learned Distilling RT-DETR on a 4 GB GPU"
 date: 2026-08-06
 permalink: /posts/2026/08/rt-detr-kd-what-i-learned/
+hidden: true
 description: "An end-to-end knowledge distillation study on a single RTX 3050. Three novel claims, all three refuted by their own controls — and why that turned out to be the point."
 mathjax: true
 use_math: true

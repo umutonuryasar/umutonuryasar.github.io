@@ -2,6 +2,7 @@
 title: "I Fixed the 'Correct' Way to Align Queries in DETR Distillation. It Lost."
 date: 2026-08-06
 permalink: /posts/2026/08/rt-detr-kd-queries/
+hidden: true
 description: "The principled fix for Query-KD in RT-DETR was prediction-space Hungarian matching. I implemented it, expected it to win, and it lost — reproducibly. Here's what the control taught me."
 mathjax: true
 use_math: true
