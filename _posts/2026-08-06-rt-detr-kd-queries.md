@@ -12,7 +12,7 @@ tags:
   - negative-results
 ---
 
-{% include rt-detr-series.html part=2 live=1 %}
+{% include rt-detr-series.html part=2 live=3 %}
 
 The principled fix for Query-KD in RT-DETR was prediction-space Hungarian matching. I implemented it, expected it to win, and it lost — reproducibly. Here's what the control taught me.
 

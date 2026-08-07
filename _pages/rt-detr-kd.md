@@ -7,7 +7,7 @@ toc: true
 toc_label: "Contents"
 ---
 
-{% include rt-detr-series.html part=0 live=1 %}
+{% include rt-detr-series.html part=0 live=3 %}
 
 A knowledge-distillation study on RT-DETR, run end to end on a laptop RTX 3050
 with 4 GB of VRAM. Five KD methods, three of them my own, each tested against a
@@ -102,14 +102,15 @@ on a simplex — which makes Hinton-style softmax KD a distortion. The derivatio
 is clean. The measurement found nothing. On the difference between an argument
 being correct and being consequential.
 
-**2. Query matching and its control** *(soon)*
-The novel method, its refutation, and why index pairing — arbitrary but
-stationary — may have won for a reason worth understanding.
+**2. [I Fixed the "Correct" Way to Align Queries in DETR Distillation. It Lost.](/posts/2026/08/rt-detr-kd-queries/)**
+The principled fix for Query-KD in RT-DETR was prediction-space Hungarian
+matching. I implemented it, expected it to win, and it lost — reproducibly.
+Here's what the control taught me.
 
-**3. What I learned distilling RT-DETR** *(soon)*
-Three claims, three controls, three refutations — and the λ-swap that showed
-which knob actually did the work. What held up, and why fp16 turned out to be
-free.
+**3. [What I Learned Distilling RT-DETR on a 4 GB GPU](/posts/2026/08/rt-detr-kd-what-i-learned/)**
+An end-to-end knowledge distillation study on a single RTX 3050. Three novel
+claims, all three refuted by their own controls — and why that turned out to
+be the point.
 
 ## Scope
 

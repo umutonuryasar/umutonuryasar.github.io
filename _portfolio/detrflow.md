@@ -8,7 +8,7 @@ collection: portfolio
 
 **detrflow** is a fully end-to-end object detection pipeline built on [RT-DETR](https://arxiv.org/abs/2304.08069) (Real-Time Detection Transformer), covering everything from data loading and training to evaluation, serving, and deployment.
 
-The project demonstrates a complete applied ML workflow — from pretrained baseline evaluation to a live inference API. A systematic knowledge distillation study on RT-DETR is in progress as a companion project.
+The project demonstrates a complete applied ML workflow — from pretrained baseline evaluation to a live inference API. A systematic knowledge distillation study on RT-DETR was run as a companion project — see [the tech report](/rt-detr-kd/).
 
 ## Key Results
 

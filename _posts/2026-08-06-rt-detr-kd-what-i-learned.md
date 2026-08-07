@@ -13,7 +13,7 @@ tags:
   - negative-results
 ---
 
-{% include rt-detr-series.html part=3 live=1 %}
+{% include rt-detr-series.html part=3 live=3 %}
 
 An end-to-end knowledge distillation study on a single RTX 3050. Three novel claims, all three refuted by their own controls — and why that turned out to be the point.
 
