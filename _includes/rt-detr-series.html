@@ -1,0 +1,46 @@
+{%- comment -%}
+Series navigation for the RT-DETR KD posts.
+
+Usage in a post:
+{% include rt-detr-series.html part=1 %}
+
+`part` — which post this is (1, 2 or 3); that entry renders unlinked.
+`live` — how many parts are published so far (defaults to 3). Parts above
+this render as "coming soon" instead of a dead link, so part 1 can
+go out before parts 2 and 3 exist:
+{% include rt-detr-series.html part=1 live=1 %}
+
+When you publish a new part, bump `live` in the already-published posts (or
+drop the argument once all three are out) and update the URLs below in one
+place.
+{%- endcomment -%}
+
+{%- assign live = include.live | default: 3 -%}
+{%- assign titles = "Sigmoid logits and softmax KL|Query matching and its control|What I learned distilling RT-DETR" | split: "|" -%}
+{%- assign urls =
+"/posts/2026/08/rt-detr-kd-sigmoid-softmax/|/posts/2026/08/rtdetr-kd-queries/|/posts/2026/08/rtdetr-kd-what-i-learned/"
+| split: "|" -%}
+
+<div class="notice--info" markdown="0">
+    <p style="margin-bottom:0.4em">
+        <strong>Distilling RT-DETR on a 4&nbsp;GB GPU</strong>
+        {%- if include.part == 0 -%}
+        &nbsp;— Series overview
+        {%- else -%}
+        &nbsp;— part {{ include.part }} of 3
+        {%- endif -%}
+    </p>
+    <p style="margin-top:0">
+        <a href="{{ '/rt-detr-kd/' | relative_url }}">Series overview</a>
+        {%- for title in titles -%}
+        {%- assign n = forloop.index -%}
+        &nbsp;·&nbsp;
+        {%- if n == include.part -%}
+        <strong>{{ n }}. {{ title }}</strong>
+        {%- elsif n <= live -%} <a href="{{ urls[forloop.index0] | relative_url }}">{{ n }}. {{ title }}</a>
+            {%- else -%}
+            <span style="opacity:0.6">{{ n }}. {{ title }} <em>(soon)</em></span>
+            {%- endif -%}
+            {%- endfor -%}
+    </p>
+</div>
