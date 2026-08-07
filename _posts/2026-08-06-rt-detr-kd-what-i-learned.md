@@ -1,7 +1,7 @@
 ---
 title: "What I Learned Distilling RT-DETR on a 4 GB GPU"
 date: 2026-08-06
-permalink: /posts/2026/08/rtdetr-kd-what-i-learned/
+permalink: /posts/2026/08/rt-detr-kd-what-i-learned/
 description: "An end-to-end knowledge distillation study on a single RTX 3050. Three novel claims, all three refuted by their own controls — and why that turned out to be the point."
 mathjax: true
 use_math: true
@@ -12,6 +12,8 @@ tags:
   - efficiency
   - negative-results
 ---
+
+{% include rt-detr-series.html part=3 live=1 %}
 
 An end-to-end knowledge distillation study on a single RTX 3050. Three novel claims, all three refuted by their own controls — and why that turned out to be the point.
 
@@ -24,7 +26,7 @@ The final post in this series. I set out to distill RT-DETR into a smaller stude
 I did not want a "look, KD helps" post. I wanted to test specific mechanisms, each against a matched control:
 
 1. **Logit-KD:** softmax KL is the wrong loss for a sigmoid-trained detector; a binary formulation should win. → **Refuted.** Both logit variants *hurt* relative to baseline, and softmax was not worse than binary. The premise collapsed on both ends.
-2. **Query-KD:** prediction-space Hungarian matching should beat naive index alignment (covered in [part two](/posts/2026/08/rtdetr-kd-queries/)). → **Refuted.** Index truncation won by +0.0071 mAP, n=3.
+2. **Query-KD:** prediction-space Hungarian matching should beat naive index alignment (covered in [part two](/posts/2026/08/rt-detr-kd-queries/)). → **Refuted.** Index truncation won by +0.0071 mAP, n=3.
 3. **Stage-adaptive feature-KD:** an "inverse curriculum" schedule should beat a standard cosine schedule. → **Refuted, and instructively so.** A 2×2 λ-swap showed the gain tracked the *magnitude* of the loss weight, not the schedule direction. The "inverse curriculum wins" story was a λ artifact.
 
 That third one is the trap I'm most glad I caught. Two configs differed in *both* schedule and λ; the schedule got the credit that belonged to λ. Swapping λ across the pair separated the variables and killed the claim. If you only ever run your clever config at its clever λ, you will attribute wins to the wrong knob.
@@ -55,6 +57,6 @@ Same mAP, 1.7× throughput, half the memory. fp16 is a free lunch for this model
 - **λ magnitude is a confound that impersonates a method.** Calibrate it, then swap it, before you believe any "method X wins" narrative in KD.
 - **Budget shapes conclusions.** 30K subset, 512px, a 0.142-mAP teacher, one GPU. Everything here is a statement about *this regime*, and I say so every time.
 
-This is the same discipline behind my [CIFAR-v2 paper](#): the honest, nuanced version of a result is the one worth publishing, even — especially — when it's the version where you were wrong.
+This is the same discipline behind my [CIFAR-v2 paper]({{ '/publication/2026-05-26-kd-capacity-gap' | relative_url }}): the honest, nuanced version of a result is the one worth publishing, even — especially — when it's the version where you were wrong.
 
-Full code, results table, and limitations: [rt-detr-kd repo](#).
+Full code, results table, and limitations: [rt-detr-kd repo](https://github.com/umutonuryasar/rt-detr-kd).

@@ -1,7 +1,7 @@
 ---
 title: "I Fixed the 'Correct' Way to Align Queries in DETR Distillation. It Lost."
 date: 2026-08-06
-permalink: /posts/2026/08/rtdetr-kd-queries/
+permalink: /posts/2026/08/rt-detr-kd-queries/
 description: "The principled fix for Query-KD in RT-DETR was prediction-space Hungarian matching. I implemented it, expected it to win, and it lost — reproducibly. Here's what the control taught me."
 mathjax: true
 use_math: true
@@ -11,6 +11,8 @@ tags:
   - rt-detr
   - negative-results
 ---
+
+{% include rt-detr-series.html part=2 live=1 %}
 
 The principled fix for Query-KD in RT-DETR was prediction-space Hungarian matching. I implemented it, expected it to win, and it lost — reproducibly. Here's what the control taught me.
 
@@ -53,4 +55,4 @@ I almost shipped Hungarian matching on intuition alone. The only reason I didn't
 
 **Caveat.** One teacher, one 30K subset, 512px, single architecture. This says index alignment wins *in this regime* — not that Hungarian matching is a bad idea in general. At scale, with a strong teacher and a real step budget, the ordering could easily flip. If you distill DETR queries and can afford the runs, test both. Don't assume the principled one wins for free.
 
-Code and full results: [rt-detr-kd repo](#).
+Code and full results: [rt-detr-kd repo](https://github.com/umutonuryasar/rt-detr-kd).

@@ -9,6 +9,8 @@ tags:
   - machine learning
 ---
 
+{% include rt-detr-series.html part=1 live=1 %}
+
 Argued sigmoid-trained RT-DETR logits need binary KL, not softmax KL, for distillation. Ran the softmax control anyway — it won. A case study in what a control run catches that a clean derivation doesn't.
 
 ---
