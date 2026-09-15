@@ -1,11 +1,14 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "Blog posts"
-author_profile: true
+title: "Writing"
+author_profile: false
+classes: portfolio-subpage
 redirect_from:
   - /wordpress/blog-posts/
 ---
+
+<p class="subpage-lead">Notes on applied AI research, experiments, papers, and the engineering details behind the work.</p>
 
 {% include base_path %}
 {% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
