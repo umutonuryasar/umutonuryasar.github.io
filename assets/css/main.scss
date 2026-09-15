@@ -1,26 +1,15 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
-
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -29,15 +18,135 @@
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+    "vendor/font-awesome/brands";
+
+/* Portfolio redesign ------------------------------------------------------ */
+:root {
+  --portfolio-bg: #f7f7f4;
+  --portfolio-text: #171816;
+  --portfolio-muted: #666963;
+  --portfolio-line: #d9dbd5;
+  --portfolio-accent: #315c49;
+}
+
+body { background: var(--portfolio-bg); }
+
+.masthead {
+  background: rgba(247, 247, 244, .94);
+  border-bottom: 1px solid var(--portfolio-line);
+  box-shadow: none;
+}
+
+.masthead__inner-wrap { max-width: 1120px; padding: .8rem 1.5rem; }
+.greedy-nav { background: transparent; }
+.greedy-nav a { color: var(--portfolio-text); font-size: .82rem; font-weight: 500; }
+.greedy-nav .masthead__menu-item--lg a { font-size: .9rem; font-weight: 700; letter-spacing: -.02em; }
+#theme-toggle { display: none; }
+
+.home-redesign #main {
+  max-width: 1120px;
+  margin-top: 0;
+  padding: 0 1.5rem;
+}
+.home-redesign .page { width: 100%; float: none; padding: 0; margin: 0; }
+.home-redesign .page__inner-wrap { width: 100%; }
+.home-redesign .page__inner-wrap > header,
+.home-redesign .page__meta { display: none; }
+.home-redesign .page__content { width: 100%; }
+.home-redesign .page__content a { text-decoration: none; }
+.home-redesign .page__content p { margin-bottom: 0; }
+
+.home-shell { color: var(--portfolio-text); }
+.home-hero { padding: clamp(5rem, 11vw, 9rem) 0 clamp(4.5rem, 9vw, 7rem); max-width: 920px; }
+.home-eyebrow,
+.home-kicker {
+  margin: 0 0 1.4rem !important;
+  color: var(--portfolio-accent);
+  font-size: .72rem !important;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.home-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: var(--portfolio-text);
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  line-height: .98;
+  letter-spacing: -.065em;
+  font-weight: 650;
+}
+.home-intro {
+  max-width: 690px;
+  margin-top: 2.25rem !important;
+  color: var(--portfolio-muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem) !important;
+  line-height: 1.6;
+  letter-spacing: -.015em;
+}
+.home-actions { display: flex; gap: .8rem; margin-top: 2.2rem; flex-wrap: wrap; }
+.home-action {
+  display: inline-flex;
+  padding: .72rem 1rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 4px;
+  color: var(--portfolio-text) !important;
+  font-size: .82rem;
+  font-weight: 650;
+}
+.home-action--primary { background: var(--portfolio-text); border-color: var(--portfolio-text); color: var(--portfolio-bg) !important; }
+.home-action:hover { transform: translateY(-1px); }
+
+.home-section { padding: 4.5rem 0; border-top: 1px solid var(--portfolio-line); }
+.home-section-heading { display: grid; grid-template-columns: 1fr 2fr; margin-bottom: 2.7rem; }
+.home-section-note { color: var(--portfolio-muted); font-size: .84rem !important; }
+
+.work-item { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; padding: 2.6rem 0; border-top: 1px solid var(--portfolio-line); }
+.work-item:first-child { border-top: 0; padding-top: 0; }
+.work-meta { display: flex; gap: 1rem; color: var(--portfolio-muted); font-size: .72rem; line-height: 1.5; text-transform: uppercase; letter-spacing: .06em; }
+.work-item h2 { grid-column: 2; margin: -2.2rem 0 0; border: 0; padding: 0; font-size: clamp(1.6rem, 3vw, 2.45rem); letter-spacing: -.045em; line-height: 1.1; }
+.work-item h2 a { color: var(--portfolio-text); }
+.work-item > p { grid-column: 2; max-width: 680px; color: var(--portfolio-muted); font-size: .98rem !important; line-height: 1.65; }
+.work-tags { grid-column: 2; display: flex; gap: .5rem; flex-wrap: wrap; }
+.work-tags span { padding: .28rem .5rem; border: 1px solid var(--portfolio-line); border-radius: 3px; color: var(--portfolio-muted); font-size: .68rem; }
+
+.research-feature { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; }
+.research-year { margin-bottom: .7rem !important; color: var(--portfolio-muted); font-size: .75rem !important; text-transform: uppercase; letter-spacing: .06em; }
+.research-feature h2 { max-width: 720px; margin: 0 0 1.2rem; padding: 0; border: 0; font-size: clamp(1.65rem, 3.4vw, 2.8rem); line-height: 1.1; letter-spacing: -.045em; }
+.research-feature p:not(.research-year) { max-width: 690px; color: var(--portfolio-muted); font-size: .95rem !important; line-height: 1.65; }
+.research-links { display: flex; align-items: flex-start; justify-content: flex-end; gap: 1.2rem; }
+.research-links a, .home-contact a { color: var(--portfolio-text); font-size: .82rem; font-weight: 650; }
+
+.oss-list { border-top: 1px solid var(--portfolio-line); }
+.oss-item { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.35rem 0; border-bottom: 1px solid var(--portfolio-line); color: var(--portfolio-text) !important; }
+.oss-item strong { display: block; font-size: .95rem; }
+.oss-item small { display: block; margin-top: .25rem; color: var(--portfolio-muted); font-size: .75rem; }
+.oss-status { color: var(--portfolio-muted); font-size: .75rem; white-space: nowrap; }
+
+.about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; }
+.about-grid p { max-width: 700px; font-size: 1.05rem !important; line-height: 1.7; }
+.about-grid .about-secondary { color: var(--portfolio-muted); font-size: .88rem !important; }
+.home-contact { display: flex; gap: 1.4rem; margin-top: 2.5rem; }
+
+@media (max-width: 720px) {
+  .masthead__inner-wrap, .home-redesign #main { padding-left: 1rem; padding-right: 1rem; }
+  .home-hero { padding-top: 4.5rem; }
+  .home-hero h1 { letter-spacing: -.055em; }
+  .home-section-heading,
+  .work-item,
+  .research-feature,
+  .about-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .work-item h2,
+  .work-item > p,
+  .work-tags { grid-column: 1; }
+  .work-item h2 { margin: 0; }
+  .research-links { justify-content: flex-start; }
+  .oss-item { align-items: flex-start; flex-direction: column; gap: .6rem; }
+}
