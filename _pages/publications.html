@@ -1,36 +1,15 @@
 ---
 layout: archive
-title: "Publications"
+title: "Research"
 permalink: /publications/
-author_profile: true
+author_profile: false
+classes: portfolio-subpage
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p class="subpage-lead">Research on efficient learning systems, with an emphasis on controlled experiments, reproducibility, and understanding when methods do or do not work.</p>
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}

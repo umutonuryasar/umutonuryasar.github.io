@@ -1,25 +1,22 @@
-# CV data for Academic Pages
-# Used by _pages/cv.md
-
-education:  
+education:
   - degree: "B.Sc. in Electrical and Electronics Engineering"
     institution: "Abant İzzet Baysal University"
     year: "2011 – 2020"
-  
+
 experience:
   - role: "AI Trainer"
     company: "Outlier"
     period: "May 2024 – Feb 2025"
-    location: "Ankara, Turkey (Remote)"
+    location: "Ankara, Türkiye (Remote)"
     description:
-      - "Fine-tuned large language models using Reinforcement Learning with Human Feedback (RLHF)."
-      - "Contributed to reward modeling, prompt optimization, and high-quality data generation."
-      - "Collaborated with engineering teams to improve model safety and usability."
+      - "Worked on large-language-model training and evaluation workflows involving human feedback and high-quality data generation."
+      - "Contributed to prompt and response evaluation across technically demanding tasks."
+      - "Collaborated in model-quality workflows focused on correctness, usefulness, and safety."
 
   - role: "Computer Vision Intern"
     company: "HAVELSAN"
     period: "Aug 2015 – Sep 2015"
-    location: "Ankara, Turkey"
+    location: "Ankara, Türkiye"
     description:
       - "Developed a flight simulation interface using Python."
       - "Applied OpenCV in computer vision projects."
@@ -28,26 +25,29 @@ experience:
   - role: "Avionics Intern"
     company: "Turkish Aerospace Industries (TAI)"
     period: "Jun 2014 – Jul 2014"
-    location: "Ankara, Turkey"
+    location: "Ankara, Türkiye"
     description:
       - "Developed an image recognition system in MATLAB for identifying helicopter landing zones."
       - "Created a 3D model of helicopter electrical cable placement using CATIA."
-      - "Contributed to avionics harness design process."
+      - "Contributed to the avionics harness design process."
 
 opensource:
-  - name: "HuggingFace PEFT"
+  - name: "Hugging Face PEFT — PR #3293"
     link: "https://github.com/huggingface/peft/pull/3293"
-    description: "Fixed a CUDA memory caching bug (PR #3293); reviewed and merged into the main branch."
+    description: "Fixed a CUDA memory caching issue; reviewed and merged upstream."
+  - name: "aisuite — PR #319"
+    link: "https://github.com/andrewyng/aisuite/pull/319"
+    description: "Open-source contribution reviewed and merged upstream."
 
 skills:
-  - category: "Frameworks & Libraries"
-    items: "PyTorch · OpenCV · Ultralytics · NumPy · scikit-learn"
-  - category: "Languages"
-    items: "Python · MATLAB · C++"
-  - category: "Tools & Platforms"
-    items: "CUDA · Git · Linux"
-  - category: "Domains"
-    items: "Deep Learning · Computer Vision · Knowledge Distillation · Object Detection"
+  - category: "ML / Deep Learning"
+    items: "PyTorch · Transformers · OpenCV · NumPy · scikit-learn"
+  - category: "Research"
+    items: "Knowledge Distillation · Contrastive Learning · Object Detection · Multimodal Learning · PEFT"
+  - category: "Engineering"
+    items: "Python · FastAPI · Docker · CUDA · Git · Linux"
+  - category: "Additional"
+    items: "C++ · MATLAB"
 
 certifications:
   - name: "IBM AI Engineering Professional Certificate"

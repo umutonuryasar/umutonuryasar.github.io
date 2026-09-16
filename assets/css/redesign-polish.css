@@ -1,0 +1,107 @@
+/* Final portfolio polish. Loaded after the legacy Academic Pages stylesheet. */
+
+.home-redesign #main { max-width:1120px; margin:0 auto; padding-left:1.5rem; padding-right:1.5rem; }
+.home-redesign .page,.home-redesign .page__inner-wrap,.home-redesign .page__content { float:none!important; width:100%!important; margin-left:0!important; margin-right:0!important; padding-left:0!important; padding-right:0!important; }
+.home-redesign .page__inner-wrap,.home-redesign .page__content,.home-redesign .home-shell { display:flow-root; }
+.home-redesign .page__footer { clear:both; }
+.home-redesign .home-hero { max-width:820px; padding-top:clamp(4.25rem,8vw,6.75rem); padding-bottom:clamp(4rem,7vw,5.75rem); }
+.home-redesign .home-hero h1 { max-width:800px; font-size:clamp(2.85rem,5.5vw,5rem); line-height:1.01; letter-spacing:-.058em; }
+.home-redesign .home-intro { max-width:650px; margin-top:1.8rem!important; font-size:clamp(1rem,1.4vw,1.2rem)!important; }
+.home-redesign .home-actions { margin-top:1.8rem; }
+.home-redesign .home-section { padding-top:4rem; padding-bottom:4rem; }
+
+/* Isolate the redesigned masthead from legacy Academic Pages theme states. */
+.masthead .greedy-nav,
+.masthead .greedy-nav .visible-links,
+.masthead .greedy-nav .masthead__menu-item,
+.masthead .greedy-nav .masthead__menu-item:hover,
+.masthead .greedy-nav .masthead__menu-item:focus,
+.masthead .greedy-nav .masthead__menu-item:focus-within,
+.masthead .greedy-nav .masthead__menu-item a,
+.masthead .greedy-nav .masthead__menu-item a:hover,
+.masthead .greedy-nav .masthead__menu-item a:focus,
+.masthead .greedy-nav .masthead__menu-item a:active { background:transparent!important; }
+.masthead .greedy-nav .masthead__menu-item a { color:var(--portfolio-text)!important; }
+.masthead .greedy-nav .masthead__menu-item a:hover,
+.masthead .greedy-nav .masthead__menu-item a:focus { color:var(--portfolio-accent)!important; }
+.masthead .greedy-nav .masthead__menu-item.selected a { border-bottom-color:var(--portfolio-accent)!important; }
+
+/* Interior pages: remove the remaining warm legacy link/button palette. */
+.portfolio-subpage .archive__item-title a,
+.portfolio-subpage .archive__item-title a:visited { color:var(--portfolio-text)!important; }
+.portfolio-subpage .archive__item-title a:hover,
+.portfolio-subpage .archive__item-title a:focus { color:var(--portfolio-accent)!important; }
+.portfolio-subpage .archive__item-excerpt,
+.portfolio-subpage .page__meta,
+.portfolio-subpage .page__meta a { color:var(--portfolio-muted)!important; }
+.portfolio-subpage .btn--primary,
+.portfolio-subpage a.btn--primary { background:var(--portfolio-text)!important; border-color:var(--portfolio-text)!important; color:var(--portfolio-bg)!important; box-shadow:none!important; }
+.portfolio-subpage .btn--primary:hover,
+.portfolio-subpage .btn--primary:focus,
+.portfolio-subpage a.btn--primary:hover,
+.portfolio-subpage a.btn--primary:focus { background:var(--portfolio-accent)!important; border-color:var(--portfolio-accent)!important; color:var(--portfolio-bg)!important; }
+
+.mobile-nav { display:none; }
+
+.page__footer { margin-top:0; background:var(--portfolio-bg); border-top:1px solid var(--portfolio-line); color:var(--portfolio-muted); }
+.page__footer footer { max-width:1120px; margin:0 auto; padding:1.6rem 1.5rem; }
+.portfolio-footer { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; font-size:.78rem; }
+.portfolio-footer p { margin:0; }
+.portfolio-footer nav { display:flex; gap:1.25rem; }
+.portfolio-footer a { color:var(--portfolio-text); font-weight:600; text-decoration:none; }
+.portfolio-footer a:hover { text-decoration:underline; text-underline-offset:.2em; }
+
+@media (min-width:900px) {
+  .masthead__inner-wrap { max-width:1120px; padding-left:1.5rem; padding-right:1.5rem; }
+}
+
+@media (max-width:720px) {
+  .home-redesign #main { padding-left:1rem; padding-right:1rem; }
+  .masthead__inner-wrap { padding:.7rem 1rem; }
+  .greedy-nav .masthead__menu-item--lg { margin-right:auto; }
+  .greedy-nav .masthead__menu-item--lg a { width:auto; max-width:7.5rem; white-space:nowrap; font-size:.86rem; }
+  .greedy-nav .visible-links li:not(.masthead__menu-item--lg) a { font-size:.75rem; padding-left:.55rem; padding-right:.55rem; }
+  .home-redesign .home-hero { padding-top:3.5rem; padding-bottom:3.5rem; }
+  .home-redesign .home-hero h1 { font-size:clamp(2.55rem,11.5vw,3.35rem); line-height:1.02; letter-spacing:-.052em; }
+  .home-redesign .home-intro { margin-top:1.55rem!important; line-height:1.55; }
+  .home-redesign .home-section { padding-top:3.25rem; padding-bottom:3.25rem; }
+  .home-redesign .home-section-heading { gap:.45rem; margin-bottom:2.15rem; }
+  .home-redesign .home-kicker { margin-bottom:.25rem!important; }
+  .home-redesign .work-item { gap:1rem; padding-top:2rem; padding-bottom:2rem; }
+  .home-redesign .work-meta { gap:.75rem; }
+  .home-redesign .work-item h2 { font-size:1.55rem; }
+  .home-redesign .research-feature h2 { font-size:1.65rem; }
+  .home-redesign .about-grid { gap:1.4rem; }
+  .page__footer footer { padding-left:1rem; padding-right:1rem; }
+}
+
+@media (max-width:430px) {
+  .masthead__inner-wrap { padding-left:1rem; padding-right:1rem; }
+  .greedy-nav { display:flex; align-items:center; justify-content:space-between; min-width:0; }
+  .greedy-nav .visible-links { display:block; }
+  .greedy-nav .visible-links li { display:none; }
+  .greedy-nav .visible-links .masthead__menu-item--lg { display:block; }
+  .greedy-nav .masthead__menu-item--lg a { max-width:none; margin:0; padding:.5rem 0; font-size:0; }
+  .greedy-nav .masthead__menu-item--lg a::after { content:"Umut"; font-size:.86rem; font-weight:700; }
+
+  .mobile-nav { display:block; position:relative; margin-left:auto; }
+  .mobile-nav summary { display:flex; align-items:center; justify-content:center; width:2.6rem; height:2.6rem; cursor:pointer; list-style:none; user-select:none; }
+  .mobile-nav summary::-webkit-details-marker { display:none; }
+  .mobile-navicon,.mobile-navicon::before,.mobile-navicon::after { display:block; width:1.45rem; height:2px; background:var(--portfolio-text); transition:transform .15s ease; }
+  .mobile-navicon { position:relative; }
+  .mobile-navicon::before,.mobile-navicon::after { content:""; position:absolute; left:0; }
+  .mobile-navicon::before { top:-.42rem; }
+  .mobile-navicon::after { top:.42rem; }
+  .mobile-nav[open] .mobile-navicon { background:transparent; }
+  .mobile-nav[open] .mobile-navicon::before { top:0; transform:rotate(45deg); }
+  .mobile-nav[open] .mobile-navicon::after { top:0; transform:rotate(-45deg); }
+  .mobile-nav ul { position:absolute; z-index:1000; top:calc(100% + .5rem); right:0; width:10.5rem; margin:0; padding:.35rem; list-style:none; background:var(--portfolio-bg); border:1px solid var(--portfolio-line); box-shadow:0 10px 28px rgba(0,0,0,.08); }
+  .mobile-nav li { margin:0; border-bottom:1px solid var(--portfolio-line); }
+  .mobile-nav li:last-child { border-bottom:0; }
+  .mobile-nav a { margin:0; padding:.65rem .7rem; font-size:.8rem; font-weight:600; }
+  .mobile-nav a:hover { background:rgba(0,0,0,.035); }
+
+  .home-redesign .home-hero h1 { font-size:clamp(2.45rem,11vw,3.15rem); }
+  .portfolio-footer { align-items:flex-start; flex-direction:column; gap:.8rem; }
+  .portfolio-footer nav { gap:1rem; flex-wrap:wrap; }
+}

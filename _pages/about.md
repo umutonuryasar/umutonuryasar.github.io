@@ -1,40 +1,93 @@
 ---
 permalink: /
-title: "About Me"
-author_profile: true
+title: ""
+author_profile: false
+classes: home-redesign
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am an Applied AI Research Engineer working at the intersection of **Deep Learning** and **Computer Vision**, focused on building efficient, scalable AI systems across the full research-to-deployment stack. My work spans knowledge distillation, object detection, and model compression, with an emphasis on production-grade applied research.
+<div class="home-shell">
+  <section class="home-hero">
+    <p class="home-eyebrow">Applied AI Research Engineer</p>
+    <h1>Building and studying efficient learning systems.</h1>
+    <p class="home-intro">I work across computer vision, multimodal learning, and model efficiency — turning research questions into reproducible experiments and practical systems.</p>
+    <div class="home-actions">
+      <a class="home-action home-action--primary" href="#work">View selected work</a>
+      <a class="home-action" href="https://github.com/umutonuryasar">GitHub ↗</a>
+    </div>
+  </section>
 
-## Research Interests
+  <section class="home-section" id="work">
+    <div class="home-section-heading">
+      <p class="home-kicker">Selected work</p>
+      <p class="home-section-note">Research, experiments, and engineering.</p>
+    </div>
 
-- **Knowledge Distillation & Parameter-Efficient Fine-Tuning** — teacher-student training, adapters/PEFT, model compression
-- **Computer Vision** — object detection, visual representation learning, DETR-family architectures
-- **Applied AI Research** — efficient, low-VRAM training, real-time detection, and reproducible evaluation
+    <div class="work-list">
+      <article class="work-item">
+        <div class="work-meta"><span>01</span><span>Multimodal Learning · Research</span></div>
+        <h2><a href="https://github.com/umutonuryasar/microclip">MicroCLIP <span aria-hidden="true">↗</span></a></h2>
+        <p>A from-scratch CLIP-style vision-language project for studying contrastive learning under tight compute constraints, with controlled experiments around training behavior and retrieval.</p>
+        <div class="work-tags"><span>PyTorch</span><span>CLIP</span><span>Vision-Language</span></div>
+      </article>
 
-## Selected Projects
+      <article class="work-item">
+        <div class="work-meta"><span>02</span><span>Computer Vision · Technical Report</span></div>
+        <h2><a href="/rt-detr-kd/">RT-DETR Knowledge Distillation <span aria-hidden="true">→</span></a></h2>
+        <p>A controlled study of knowledge distillation for RT-DETR on a 4 GB GPU. Five strategies were tested against explicit controls, including negative results that changed the interpretation of the methods.</p>
+        <div class="work-tags"><span>RT-DETR</span><span>Knowledge Distillation</span><span>Low-VRAM</span></div>
+      </article>
 
-**[detrflow — End-to-End RT-DETR Object Detection Pipeline](https://github.com/umutonuryasar/detrflow)**
-Production-ready object detection pipeline built on RT-DETR, reproducing the pretrained baseline (**AP = 53.1** on COCO val2017). Includes a FastAPI inference API, HuggingFace Space deployment, and benchmark scripts. A systematic knowledge distillation study on RT-DETR was run as a companion project — see [the tech report](/rt-detr-kd/).
+      <article class="work-item">
+        <div class="work-meta"><span>03</span><span>Computer Vision · Engineering</span></div>
+        <h2><a href="https://github.com/umutonuryasar/detrflow">DETRFlow <span aria-hidden="true">↗</span></a></h2>
+        <p>An end-to-end RT-DETR object detection pipeline reproducing the pretrained COCO baseline, with inference APIs, deployment, and benchmarking built around a reproducible workflow.</p>
+        <div class="work-tags"><span>Object Detection</span><span>FastAPI</span><span>Deployment</span></div>
+      </article>
+    </div>
+  </section>
 
-**[Distilling RT-DETR on a 4 GB GPU](/rt-detr-kd/)**
-A controlled knowledge-distillation study on RT-DETR — five KD methods tested against control runs, three of them my own, all three refuted by their own controls. Full tech report and a three-post write-up series covering the methods, the query-matching control, and what the controls revealed about λ scheduling.
+  <section class="home-section" id="research">
+    <div class="home-section-heading">
+      <p class="home-kicker">Research</p>
+      <p class="home-section-note">Published and ongoing work.</p>
+    </div>
+    <article class="research-feature">
+      <div>
+        <p class="research-year">2026 · arXiv preprint</p>
+        <h2>Student Capacity Moderates Knowledge Distillation Effectiveness</h2>
+        <p>A systematic study of Logit-KD and Feature-KD across ResNet teacher–student pairs, finding student capacity to be a stronger moderator of distillation effectiveness than the teacher–student accuracy gap.</p>
+      </div>
+      <div class="research-links">
+        <a href="https://arxiv.org/abs/2605.31191">Paper ↗</a>
+        <a href="https://github.com/umutonuryasar/kd-capacity-gap">Code ↗</a>
+      </div>
+    </article>
+  </section>
 
-**[Student Capacity Moderates Knowledge Distillation Effectiveness](https://github.com/umutonuryasar/kd-capacity-gap)**
-Systematic study of Logit-KD and Feature-KD across three ResNet teacher-student pairs on CIFAR-10. Key finding: student capacity — not the teacher-student accuracy gap — is the primary moderating factor in KD effectiveness. Results reproduced across 3 seeds; interactive demo on HuggingFace Spaces. Published as an arXiv preprint ([arXiv:2605.31191](https://arxiv.org/abs/2605.31191)).
+  <section class="home-section" id="opensource">
+    <div class="home-section-heading">
+      <p class="home-kicker">Open source</p>
+      <p class="home-section-note">Contributions upstream.</p>
+    </div>
+    <div class="oss-list">
+      <a class="oss-item" href="https://github.com/huggingface/peft/pull/3293"><span><strong>Hugging Face PEFT</strong><small>CUDA memory caching fix</small></span><span class="oss-status">PR #3293 · Merged ↗</span></a>
+      <a class="oss-item" href="https://github.com/andrewyng/aisuite/pull/319"><span><strong>aisuite</strong><small>Open-source contribution</small></span><span class="oss-status">PR #319 · Merged ↗</span></a>
+    </div>
+  </section>
 
-## Open Source Contributions
-
-**[HuggingFace PEFT — PR #3293](https://github.com/huggingface/peft/pull/3293)**
-Fixed a CUDA memory caching bug in the PEFT library; reviewed and merged into the main branch.
-
-## Background
-
-I hold a degree in Electrical and Electronics Engineering, which underpins the applied research above — an arXiv preprint, a merged PEFT contribution, and an RT-DETR tech report. I also maintain an active [blog](/year-archive/) where I write about deep learning, research papers, and applied AI.
-
-## Get in Touch
-
-Open to research discussions, collaborations, or exchanging ideas. You can reach me via [GitHub](https://github.com/umutonuryasar) or [LinkedIn](https://www.linkedin.com/in/umutonuryasar).
+  <section class="home-section home-about" id="about">
+    <div class="home-section-heading"><p class="home-kicker">About</p></div>
+    <div class="about-grid">
+      <p>I am an Applied AI Research Engineer with an Electrical &amp; Electronics Engineering background. I am interested in efficient learning, computer vision, multimodal models, and the engineering required to turn experiments into reliable systems.</p>
+      <p class="about-secondary">Based in Ankara, Türkiye. Open to research engineering roles, collaborations, and technically ambitious applied AI work.</p>
+    </div>
+    <div class="home-contact">
+      <a href="https://github.com/umutonuryasar">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/umutonuryasar">LinkedIn ↗</a>
+      <a href="mailto:umutonuryasar@gmail.com">Email ↗</a>
+    </div>
+  </section>
+</div>
