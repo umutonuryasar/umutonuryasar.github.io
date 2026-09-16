@@ -10,8 +10,7 @@
 .home-redesign .home-actions { margin-top:1.8rem; }
 .home-redesign .home-section { padding-top:4rem; padding-bottom:4rem; }
 
-/* The legacy Academic Pages masthead gives each li its own theme background.
-   Keep the redesigned header visually transparent regardless of anchor/focus state. */
+/* Isolate the redesigned masthead from legacy Academic Pages theme states. */
 .masthead .greedy-nav,
 .masthead .greedy-nav .visible-links,
 .masthead .greedy-nav .masthead__menu-item,
@@ -25,6 +24,22 @@
 .masthead .greedy-nav .masthead__menu-item a { color:var(--portfolio-text)!important; }
 .masthead .greedy-nav .masthead__menu-item a:hover,
 .masthead .greedy-nav .masthead__menu-item a:focus { color:var(--portfolio-accent)!important; }
+.masthead .greedy-nav .masthead__menu-item.selected a { border-bottom-color:var(--portfolio-accent)!important; }
+
+/* Interior pages: remove the remaining warm legacy link/button palette. */
+.portfolio-subpage .archive__item-title a,
+.portfolio-subpage .archive__item-title a:visited { color:var(--portfolio-text)!important; }
+.portfolio-subpage .archive__item-title a:hover,
+.portfolio-subpage .archive__item-title a:focus { color:var(--portfolio-accent)!important; }
+.portfolio-subpage .archive__item-excerpt,
+.portfolio-subpage .page__meta,
+.portfolio-subpage .page__meta a { color:var(--portfolio-muted)!important; }
+.portfolio-subpage .btn--primary,
+.portfolio-subpage a.btn--primary { background:var(--portfolio-text)!important; border-color:var(--portfolio-text)!important; color:var(--portfolio-bg)!important; box-shadow:none!important; }
+.portfolio-subpage .btn--primary:hover,
+.portfolio-subpage .btn--primary:focus,
+.portfolio-subpage a.btn--primary:hover,
+.portfolio-subpage a.btn--primary:focus { background:var(--portfolio-accent)!important; border-color:var(--portfolio-accent)!important; color:var(--portfolio-bg)!important; }
 
 .mobile-nav { display:none; }
 
