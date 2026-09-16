@@ -12,7 +12,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div id="main" role="main"{% if page.classes %} class="{{ page.classes | join: ' ' }}"{% endif %}>
   {% include sidebar.html %}
 
   <div class="archive">
