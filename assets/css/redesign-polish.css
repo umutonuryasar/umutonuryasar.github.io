@@ -20,10 +20,7 @@
 
 .home-redesign .page__inner-wrap,
 .home-redesign .page__content,
-.home-redesign .home-shell {
-  display: flow-root;
-}
-
+.home-redesign .home-shell { display: flow-root; }
 .home-redesign .page__footer { clear: both; }
 
 .home-redesign .home-hero {
@@ -57,101 +54,67 @@
 }
 
 @media (max-width: 720px) {
-  .home-redesign #main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .masthead__inner-wrap {
-    padding: .7rem 1rem;
-  }
-
-  .greedy-nav .masthead__menu-item--lg {
-    margin-right: auto;
-  }
-
+  .home-redesign #main { padding-left: 1rem; padding-right: 1rem; }
+  .masthead__inner-wrap { padding: .7rem 1rem; }
+  .greedy-nav .masthead__menu-item--lg { margin-right: auto; }
   .greedy-nav .masthead__menu-item--lg a {
     width: auto;
     max-width: 7.5rem;
     white-space: nowrap;
     font-size: .86rem;
   }
-
   .greedy-nav .visible-links li:not(.masthead__menu-item--lg) a {
     font-size: .75rem;
     padding-left: .55rem;
     padding-right: .55rem;
   }
-
-  .home-redesign .home-hero {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
+  .home-redesign .home-hero { padding-top: 3.5rem; padding-bottom: 3.5rem; }
   .home-redesign .home-hero h1 {
     font-size: clamp(2.55rem, 11.5vw, 3.35rem);
     line-height: 1.02;
     letter-spacing: -.052em;
   }
-
-  .home-redesign .home-intro {
-    margin-top: 1.55rem !important;
-    line-height: 1.55;
-  }
-
-  .home-redesign .home-section {
-    padding-top: 3.25rem;
-    padding-bottom: 3.25rem;
-  }
-
-  .home-redesign .home-section-heading {
-    gap: .45rem;
-    margin-bottom: 2.15rem;
-  }
-
-  .home-redesign .home-kicker {
-    margin-bottom: .25rem !important;
-  }
-
-  .home-redesign .work-item {
-    gap: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .home-redesign .work-meta {
-    gap: .75rem;
-  }
-
-  .home-redesign .work-item h2 {
-    font-size: 1.55rem;
-  }
-
-  .home-redesign .research-feature h2 {
-    font-size: 1.65rem;
-  }
-
-  .home-redesign .about-grid {
-    gap: 1.4rem;
-  }
+  .home-redesign .home-intro { margin-top: 1.55rem !important; line-height: 1.55; }
+  .home-redesign .home-section { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+  .home-redesign .home-section-heading { gap: .45rem; margin-bottom: 2.15rem; }
+  .home-redesign .home-kicker { margin-bottom: .25rem !important; }
+  .home-redesign .work-item { gap: 1rem; padding-top: 2rem; padding-bottom: 2rem; }
+  .home-redesign .work-meta { gap: .75rem; }
+  .home-redesign .work-item h2 { font-size: 1.55rem; }
+  .home-redesign .research-feature h2 { font-size: 1.65rem; }
+  .home-redesign .about-grid { gap: 1.4rem; }
 }
 
 @media (max-width: 430px) {
-  /* The legacy greedy navigation was squeezing the site title into three lines.
-     Keep the identity compact and let lower-priority links move into its menu. */
+  /* At phone widths the legacy greedy-nav cannot fit brand + four links + menu.
+     Show the three useful homepage destinations and let CV live in the overflow menu. */
+  .masthead__inner-wrap { padding-left: 1rem; padding-right: 1rem; }
+  .greedy-nav .visible-links { min-width: 0; }
   .greedy-nav .masthead__menu-item--lg a {
     max-width: none;
     font-size: 0;
+    padding-left: 0;
+    padding-right: .65rem;
   }
-
   .greedy-nav .masthead__menu-item--lg a::after {
     content: "Umut";
     font-size: .86rem;
     font-weight: 700;
   }
-
   .greedy-nav .visible-links li:not(.masthead__menu-item--lg) a {
-    padding-left: .42rem;
-    padding-right: .42rem;
+    font-size: .72rem;
+    padding-left: .36rem;
+    padding-right: .36rem;
+  }
+  .greedy-nav .visible-links li:nth-last-child(2) {
+    display: none !important;
+  }
+  .greedy-nav button {
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    margin-left: .2rem;
+  }
+  .home-redesign .home-hero h1 {
+    font-size: clamp(2.45rem, 11vw, 3.15rem);
   }
 }
