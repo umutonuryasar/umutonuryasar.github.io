@@ -12,6 +12,14 @@
 
 .mobile-nav { display:none; }
 
+.page__footer { margin-top:0; background:var(--portfolio-bg); border-top:1px solid var(--portfolio-line); color:var(--portfolio-muted); }
+.page__footer footer { max-width:1120px; margin:0 auto; padding:1.6rem 1.5rem; }
+.portfolio-footer { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; font-size:.78rem; }
+.portfolio-footer p { margin:0; }
+.portfolio-footer nav { display:flex; gap:1.25rem; }
+.portfolio-footer a { color:var(--portfolio-text); font-weight:600; text-decoration:none; }
+.portfolio-footer a:hover { text-decoration:underline; text-underline-offset:.2em; }
+
 @media (min-width:900px) {
   .masthead__inner-wrap { max-width:1120px; padding-left:1.5rem; padding-right:1.5rem; }
 }
@@ -33,6 +41,7 @@
   .home-redesign .work-item h2 { font-size:1.55rem; }
   .home-redesign .research-feature h2 { font-size:1.65rem; }
   .home-redesign .about-grid { gap:1.4rem; }
+  .page__footer footer { padding-left:1rem; padding-right:1rem; }
 }
 
 @media (max-width:430px) {
@@ -55,11 +64,13 @@
   .mobile-nav[open] .mobile-navicon { background:transparent; }
   .mobile-nav[open] .mobile-navicon::before { top:0; transform:rotate(45deg); }
   .mobile-nav[open] .mobile-navicon::after { top:0; transform:rotate(-45deg); }
-  .mobile-nav ul { position:absolute; z-index:1000; top:calc(100% + .65rem); right:0; width:11rem; margin:0; padding:.45rem; list-style:none; background:var(--portfolio-bg); border:1px solid var(--portfolio-line); box-shadow:0 10px 28px rgba(0,0,0,.08); }
+  .mobile-nav ul { position:absolute; z-index:1000; top:calc(100% + .5rem); right:0; width:10.5rem; margin:0; padding:.35rem; list-style:none; background:var(--portfolio-bg); border:1px solid var(--portfolio-line); box-shadow:0 10px 28px rgba(0,0,0,.08); }
   .mobile-nav li { margin:0; border-bottom:1px solid var(--portfolio-line); }
   .mobile-nav li:last-child { border-bottom:0; }
-  .mobile-nav a { margin:0; padding:.7rem .75rem; font-size:.82rem; font-weight:600; }
+  .mobile-nav a { margin:0; padding:.65rem .7rem; font-size:.8rem; font-weight:600; }
   .mobile-nav a:hover { background:rgba(0,0,0,.035); }
 
   .home-redesign .home-hero h1 { font-size:clamp(2.45rem,11vw,3.15rem); }
+  .portfolio-footer { align-items:flex-start; flex-direction:column; gap:.8rem; }
+  .portfolio-footer nav { gap:1rem; flex-wrap:wrap; }
 }
