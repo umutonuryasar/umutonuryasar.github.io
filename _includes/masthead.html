@@ -13,7 +13,11 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item nav-item-{{ link.title | downcase | replace: ' ', '-' }} {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            {% assign is_anchor_link = false %}
+            {% if link.url contains '#' %}
+              {% assign is_anchor_link = true %}
+            {% endif %}
+            <li class="masthead__menu-item nav-item-{{ link.title | downcase | replace: ' ', '-' }} {% unless is_anchor_link %}{% if page.url contains link.url and link.url != '/' %}selected{% endif %}{% endunless %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
