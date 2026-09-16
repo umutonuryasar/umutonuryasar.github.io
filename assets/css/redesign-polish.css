@@ -1,4 +1,4 @@
-/* Second-pass homepage polish. Kept separate so it can override legacy Academic Pages layout rules cleanly. */
+/* Final portfolio polish. Loaded after the legacy Academic Pages stylesheet. */
 
 .home-redesign #main {
   max-width: 1120px;
@@ -24,9 +24,7 @@
   display: flow-root;
 }
 
-.home-redesign .page__footer {
-  clear: both;
-}
+.home-redesign .page__footer { clear: both; }
 
 .home-redesign .home-hero {
   max-width: 820px;
@@ -47,14 +45,8 @@
   font-size: clamp(1rem, 1.4vw, 1.2rem) !important;
 }
 
-.home-redesign .home-actions {
-  margin-top: 1.8rem;
-}
-
-.home-redesign .home-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+.home-redesign .home-actions { margin-top: 1.8rem; }
+.home-redesign .home-section { padding-top: 4rem; padding-bottom: 4rem; }
 
 @media (min-width: 900px) {
   .masthead__inner-wrap {
@@ -70,13 +62,96 @@
     padding-right: 1rem;
   }
 
+  .masthead__inner-wrap {
+    padding: .7rem 1rem;
+  }
+
+  .greedy-nav .masthead__menu-item--lg {
+    margin-right: auto;
+  }
+
+  .greedy-nav .masthead__menu-item--lg a {
+    width: auto;
+    max-width: 7.5rem;
+    white-space: nowrap;
+    font-size: .86rem;
+  }
+
+  .greedy-nav .visible-links li:not(.masthead__menu-item--lg) a {
+    font-size: .75rem;
+    padding-left: .55rem;
+    padding-right: .55rem;
+  }
+
   .home-redesign .home-hero {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .home-redesign .home-hero h1 {
-    font-size: clamp(2.65rem, 13vw, 4rem);
+    font-size: clamp(2.55rem, 11.5vw, 3.35rem);
+    line-height: 1.02;
     letter-spacing: -.052em;
+  }
+
+  .home-redesign .home-intro {
+    margin-top: 1.55rem !important;
+    line-height: 1.55;
+  }
+
+  .home-redesign .home-section {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+
+  .home-redesign .home-section-heading {
+    gap: .45rem;
+    margin-bottom: 2.15rem;
+  }
+
+  .home-redesign .home-kicker {
+    margin-bottom: .25rem !important;
+  }
+
+  .home-redesign .work-item {
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .home-redesign .work-meta {
+    gap: .75rem;
+  }
+
+  .home-redesign .work-item h2 {
+    font-size: 1.55rem;
+  }
+
+  .home-redesign .research-feature h2 {
+    font-size: 1.65rem;
+  }
+
+  .home-redesign .about-grid {
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 430px) {
+  /* The legacy greedy navigation was squeezing the site title into three lines.
+     Keep the identity compact and let lower-priority links move into its menu. */
+  .greedy-nav .masthead__menu-item--lg a {
+    max-width: none;
+    font-size: 0;
+  }
+
+  .greedy-nav .masthead__menu-item--lg a::after {
+    content: "Umut";
+    font-size: .86rem;
+    font-weight: 700;
+  }
+
+  .greedy-nav .visible-links li:not(.masthead__menu-item--lg) a {
+    padding-left: .42rem;
+    padding-right: .42rem;
   }
 }
