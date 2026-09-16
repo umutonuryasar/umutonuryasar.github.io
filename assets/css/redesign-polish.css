@@ -10,6 +10,22 @@
 .home-redesign .home-actions { margin-top:1.8rem; }
 .home-redesign .home-section { padding-top:4rem; padding-bottom:4rem; }
 
+/* The legacy Academic Pages masthead gives each li its own theme background.
+   Keep the redesigned header visually transparent regardless of anchor/focus state. */
+.masthead .greedy-nav,
+.masthead .greedy-nav .visible-links,
+.masthead .greedy-nav .masthead__menu-item,
+.masthead .greedy-nav .masthead__menu-item:hover,
+.masthead .greedy-nav .masthead__menu-item:focus,
+.masthead .greedy-nav .masthead__menu-item:focus-within,
+.masthead .greedy-nav .masthead__menu-item a,
+.masthead .greedy-nav .masthead__menu-item a:hover,
+.masthead .greedy-nav .masthead__menu-item a:focus,
+.masthead .greedy-nav .masthead__menu-item a:active { background:transparent!important; }
+.masthead .greedy-nav .masthead__menu-item a { color:var(--portfolio-text)!important; }
+.masthead .greedy-nav .masthead__menu-item a:hover,
+.masthead .greedy-nav .masthead__menu-item a:focus { color:var(--portfolio-accent)!important; }
+
 .mobile-nav { display:none; }
 
 .page__footer { margin-top:0; background:var(--portfolio-bg); border-top:1px solid var(--portfolio-line); color:var(--portfolio-muted); }
