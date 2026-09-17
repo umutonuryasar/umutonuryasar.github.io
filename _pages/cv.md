@@ -41,11 +41,5 @@ redirect_from:
 ## Skills
 
 {% for item in site.data.cv.skills %}
-**{{ item.category }}** — {{ item.items }}  
-{% endfor %}
-
-## Certifications
-
-{% for item in site.data.cv.certifications %}
-- {{ item.name }} — _{{ item.issuer }}_
+**{{ item.category }}** — {{ item.items }}
 {% endfor %}
