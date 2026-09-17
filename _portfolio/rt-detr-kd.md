@@ -41,7 +41,7 @@ Two ideas receive explicit controls:
 | Configuration | mAP@[.5:.95] (n=3) | Δ baseline |
 | --- | ---: | ---: |
 | Baseline (no KD) | 0.0388 ± 0.0028 | — |
-| Query-KD, Hungarian matching *(novel)* | 0.0377 ± 0.0007 | −0.0011 |
+| Query-KD, Hungarian matching *(proposed)* | 0.0377 ± 0.0007 | −0.0011 |
 | Query-KD, index truncation *(control)* | 0.0448 ± 0.0010 | +0.0060 |
 | **Stage-Adaptive, cosine, λ=22.51** *(λ-swap control)* | **0.0676 ± 0.0005** | **+0.0288 (+74%)** |
 

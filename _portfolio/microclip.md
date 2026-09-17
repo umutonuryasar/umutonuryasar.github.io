@@ -62,7 +62,14 @@ The canonical checkpoint is a representative softmax batch-512 run rather than t
 
 ## Tech Stack
 
-`PyTorch` · `ResNet-18` · `Transformer` · `Contrastive Learning` · `COCO Captions` · `Weights & Biases`
+<div class="project-tags" aria-label="Technology stack">
+  <span>PyTorch</span>
+  <span>ResNet-18</span>
+  <span>Transformer</span>
+  <span>Contrastive Learning</span>
+  <span>COCO Captions</span>
+  <span>Weights &amp; Biases</span>
+</div>
 
 ## Links
 
