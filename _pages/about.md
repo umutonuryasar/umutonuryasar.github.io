@@ -42,7 +42,7 @@ redirect_from:
 
       <article class="work-item">
         <div class="work-meta"><span>03</span><span>Computer Vision · Engineering</span></div>
-        <h2><a href="https://github.com/umutonuryasar/detrflow">DETRFlow <span aria-hidden="true">↗</span></a></h2>
+        <h2><a href="/portfolio/detrflow/">DETRFlow <span aria-hidden="true">→</span></a></h2>
         <p>An end-to-end RT-DETR object detection pipeline reproducing the pretrained COCO baseline, with inference APIs, deployment, and benchmarking built around a reproducible workflow.</p>
         <div class="work-tags"><span>Object Detection</span><span>FastAPI</span><span>Deployment</span></div>
       </article>
