@@ -33,13 +33,16 @@
 .research-series-links .is-current { color: var(--portfolio-text); font-weight: 650; }
 .research-series-links .is-muted { color: var(--portfolio-muted); }
 @media (max-width: 720px) {
-  #main:has(.page.research-post) { padding: 0 1rem; }
-  .page.research-post .page__inner-wrap { width: auto; margin: 3rem auto 4.5rem; }
-  .page.research-post .page__title { font-size: clamp(2.15rem, 9.5vw, 2.9rem); }
-  .page.research-post .page__content { font-size: 1rem; }
-  .page.research-post .page__content table { display: block; overflow-x: auto; font-size: .82rem; }
+  #main:has(.page.research-post) { width: 100%; max-width: 100%; margin-left: 0; margin-right: 0; padding: 0 1rem; box-sizing: border-box; }
+  .page.research-post { width: 100%; max-width: 100%; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; box-sizing: border-box; }
+  .page.research-post .page__inner-wrap { width: 100%; max-width: 100%; margin: 3rem 0 4.5rem; box-sizing: border-box; }
+  .page.research-post .page__title { max-width: 100%; font-size: clamp(2.15rem, 9.5vw, 2.9rem); overflow-wrap: break-word; }
+  .page.research-post .page__content { width: 100%; max-width: 100%; font-size: 1rem; overflow-wrap: break-word; }
+  .page.research-post .page__content table { display: block; max-width: 100%; overflow-x: auto; font-size: .82rem; }
+  .research-series-nav { width: 100%; max-width: 100%; box-sizing: border-box; }
   .research-series-heading { display: block; }
   .research-series-heading span { display: block; margin-top: .15rem; }
-  .research-series-links { gap: .4rem .75rem; }
+  .research-series-links { width: 100%; max-width: 100%; gap: .4rem .75rem; }
+  .research-series-links a, .research-series-links .is-current, .research-series-links .is-muted { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
 }
 </style>
