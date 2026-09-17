@@ -4,6 +4,16 @@ education:
     year: "2011 – 2020"
 
 experience:
+  - role: "Applied AI Research Engineer"
+    company: "Independent Researcher"
+    period: "Mar 2025 – Present"
+    location: "Ankara, Türkiye"
+    description:
+      - "Conduct independent research on efficient learning for computer vision and multimodal systems, emphasizing controlled experiments and reproducible engineering."
+      - "First-author arXiv preprint on student-capacity effects in knowledge distillation across ResNet teacher–student pairs."
+      - "Completed a controlled RT-DETR distillation study across 11 configurations and five KD methods under a 4 GB GPU budget."
+      - "Built MicroCLIP from scratch to test sigmoid versus softmax contrastive objectives across batch sizes and repeated seeds."
+
   - role: "AI Trainer"
     company: "Outlier"
     period: "May 2024 – Feb 2025"
