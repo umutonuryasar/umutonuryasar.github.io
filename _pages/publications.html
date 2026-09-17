@@ -6,10 +6,32 @@ author_profile: false
 classes: portfolio-subpage
 ---
 
-<p class="subpage-lead">Research on efficient learning systems, with an emphasis on controlled experiments, reproducibility, and understanding when methods do or do not work.</p>
+<p class="subpage-lead">Controlled studies of efficient learning systems, with an emphasis on reproducibility, explicit controls, and understanding when methods do or do not work.</p>
 
-{% include base_path %}
+<section class="research-index-section" aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Publications</h2>
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  <article class="research-index-item">
+    <p class="research-index-meta">2026 · arXiv preprint</p>
+    <h3>Student Capacity Moderates Knowledge Distillation Effectiveness</h3>
+    <p>A systematic study of Logit-KD and Feature-KD across ResNet teacher–student pairs on CIFAR-10, finding student capacity to be a stronger moderator of distillation effectiveness than the teacher–student accuracy gap.</p>
+    <p class="research-index-links">
+      <a href="https://arxiv.org/abs/2605.31191">Paper ↗</a>
+      <a href="https://github.com/umutonuryasar/kd-capacity-gap">Code ↗</a>
+    </p>
+  </article>
+</section>
+
+<section class="research-index-section" aria-labelledby="technical-research-heading">
+  <h2 id="technical-research-heading">Technical Research</h2>
+
+  <article class="research-index-item">
+    <p class="research-index-meta">2026 · Technical report</p>
+    <h3><a href="/rt-detr-kd/">Distilling RT-DETR on a 4 GB GPU</a></h3>
+    <p>An 11-configuration controlled study across five knowledge-distillation methods, testing transformer-specific ideas against explicit controls under a single 4 GB GPU budget.</p>
+    <p class="research-index-links">
+      <a href="/rt-detr-kd/">Report →</a>
+      <a href="/portfolio/rt-detr-kd/">Case study →</a>
+    </p>
+  </article>
+</section>
