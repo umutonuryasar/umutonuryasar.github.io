@@ -4,6 +4,11 @@ date: 2026-08-06
 permalink: /posts/2026/08/rt-detr-kd-sigmoid-softmax/
 hidden: true
 description: "Argued sigmoid-trained RT-DETR logits need binary KL, not softmax KL, for distillation. Ran the softmax control anyway — it won. A case study in what a control run catches that a clean derivation doesn't."
+classes: research-post
+author_profile: false
+share: false
+related: false
+read_time: true
 tags:
   - knowledge distillation
   - RT-DETR
@@ -15,8 +20,6 @@ tags:
 Argued sigmoid-trained RT-DETR logits need binary KL, not softmax KL, for distillation. Ran the softmax control anyway — it won. A case study in what a control run catches that a clean derivation doesn't.
 
 ---
-
-# I Argued Softmax KL Was Wrong for Detection Distillation. Then I Ran the Control.
 
 There is a specific kind of argument that feels like it cannot be wrong. It
 starts from something true about how a model was trained, follows a short chain
