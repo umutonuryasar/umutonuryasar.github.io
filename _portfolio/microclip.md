@@ -2,6 +2,7 @@
 title: "MicroCLIP — Testing SigLIP at Small Scale"
 excerpt: "A from-scratch CLIP-style system for testing whether SigLIP's reported small-batch advantage over softmax persists in a controlled, single-GPU regime."
 collection: portfolio
+classes: portfolio-project
 author_profile: false
 share: false
 ---
