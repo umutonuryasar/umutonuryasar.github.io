@@ -1,5 +1,5 @@
 ---
-title: "DETRFlow — End-to-End RT-DETR Pipeline"
+title: "DETRFlow — RT-DETR Engineering Pipeline"
 excerpt: "An end-to-end RT-DETR engineering project spanning evaluation, training infrastructure, inference, API serving, deployment, and benchmarking."
 collection: portfolio
 classes: portfolio-project
