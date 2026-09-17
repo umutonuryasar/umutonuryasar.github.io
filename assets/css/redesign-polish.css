@@ -26,6 +26,23 @@
 .masthead .greedy-nav .masthead__menu-item a:focus { color:var(--portfolio-accent)!important; }
 .masthead .greedy-nav .masthead__menu-item.selected a { border-bottom-color:var(--portfolio-accent)!important; }
 
+/* Keyboard focus is intentionally visible across the redesigned surfaces. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible { outline:2px solid var(--portfolio-accent); outline-offset:3px; border-radius:2px; }
+.home-action:focus-visible,
+.portfolio-subpage .btn:focus-visible { outline-offset:4px; }
+
+/* Long technical tokens and embeds must not force horizontal page scrolling. */
+.page__content,
+.archive,
+.home-shell { overflow-wrap:anywhere; }
+.page__content img,
+.page__content video,
+.page__content iframe { max-width:100%; height:auto; }
+.page__content pre { max-width:100%; overflow-x:auto; }
+
 /* Interior pages: remove the remaining warm legacy link/button palette. */
 .portfolio-subpage .archive__item-title a,
 .portfolio-subpage .archive__item-title a:visited { color:var(--portfolio-text)!important; }
@@ -73,6 +90,12 @@
   .home-redesign .research-feature h2 { font-size:1.65rem; }
   .home-redesign .about-grid { gap:1.4rem; }
   .page__footer footer { padding-left:1rem; padding-right:1rem; }
+  .page__content table { max-width:100%; }
+  .home-action,
+  .portfolio-subpage .btn,
+  .research-links a,
+  .home-contact a,
+  .portfolio-footer a { min-height:44px; display:inline-flex; align-items:center; }
 }
 
 @media (max-width:430px) {
@@ -85,7 +108,7 @@
   .greedy-nav .masthead__menu-item--lg a::after { content:"Umut"; font-size:.86rem; font-weight:700; }
 
   .mobile-nav { display:block; position:relative; margin-left:auto; }
-  .mobile-nav summary { display:flex; align-items:center; justify-content:center; width:2.6rem; height:2.6rem; cursor:pointer; list-style:none; user-select:none; }
+  .mobile-nav summary { display:flex; align-items:center; justify-content:center; width:2.75rem; height:2.75rem; cursor:pointer; list-style:none; user-select:none; border-radius:3px; }
   .mobile-nav summary::-webkit-details-marker { display:none; }
   .mobile-navicon,.mobile-navicon::before,.mobile-navicon::after { display:block; width:1.45rem; height:2px; background:var(--portfolio-text); transition:transform .15s ease; }
   .mobile-navicon { position:relative; }
@@ -95,13 +118,18 @@
   .mobile-nav[open] .mobile-navicon { background:transparent; }
   .mobile-nav[open] .mobile-navicon::before { top:0; transform:rotate(45deg); }
   .mobile-nav[open] .mobile-navicon::after { top:0; transform:rotate(-45deg); }
-  .mobile-nav ul { position:absolute; z-index:1000; top:calc(100% + .5rem); right:0; width:10.5rem; margin:0; padding:.35rem; list-style:none; background:var(--portfolio-bg); border:1px solid var(--portfolio-line); box-shadow:0 10px 28px rgba(0,0,0,.08); }
+  .mobile-nav ul { position:absolute; z-index:1000; top:calc(100% + .5rem); right:0; width:min(12rem,calc(100vw - 2rem)); margin:0; padding:.35rem; list-style:none; background:var(--portfolio-bg); border:1px solid var(--portfolio-line); box-shadow:0 10px 28px rgba(0,0,0,.08); }
   .mobile-nav li { margin:0; border-bottom:1px solid var(--portfolio-line); }
   .mobile-nav li:last-child { border-bottom:0; }
-  .mobile-nav a { margin:0; padding:.65rem .7rem; font-size:.8rem; font-weight:600; }
+  .mobile-nav a { margin:0; min-height:44px; padding:.65rem .7rem; display:flex; align-items:center; font-size:.8rem; font-weight:600; }
   .mobile-nav a:hover { background:rgba(0,0,0,.035); }
 
   .home-redesign .home-hero h1 { font-size:clamp(2.45rem,11vw,3.15rem); }
   .portfolio-footer { align-items:flex-start; flex-direction:column; gap:.8rem; }
   .portfolio-footer nav { gap:1rem; flex-wrap:wrap; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
 }
