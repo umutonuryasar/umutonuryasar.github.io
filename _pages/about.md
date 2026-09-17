@@ -28,7 +28,7 @@ redirect_from:
     <div class="work-list">
       <article class="work-item">
         <div class="work-meta"><span>01</span><span>Multimodal Learning · Research</span></div>
-        <h2><a href="https://github.com/umutonuryasar/microclip">MicroCLIP <span aria-hidden="true">↗</span></a></h2>
+        <h2><a href="/microclip/">MicroCLIP <span aria-hidden="true">→</span></a></h2>
         <p>A from-scratch CLIP-style vision-language project for studying contrastive learning under tight compute constraints, with controlled experiments around training behavior and retrieval.</p>
         <div class="work-tags"><span>PyTorch</span><span>CLIP</span><span>Vision-Language</span></div>
       </article>
