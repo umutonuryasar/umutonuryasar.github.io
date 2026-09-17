@@ -63,7 +63,15 @@ The distillation work is presented separately because its evidence is experiment
 
 ## Tech Stack
 
-`PyTorch` · `RT-DETR` · `Hugging Face Transformers` · `FastAPI` · `Gradio` · `COCO API` · `Docker`
+<div class="project-tags" aria-label="Technology stack">
+  <span>PyTorch</span>
+  <span>RT-DETR</span>
+  <span>Hugging Face Transformers</span>
+  <span>FastAPI</span>
+  <span>Gradio</span>
+  <span>COCO API</span>
+  <span>Docker</span>
+</div>
 
 ## Links
 
