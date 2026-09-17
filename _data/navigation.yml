@@ -3,7 +3,7 @@ main:
     url: /#work
 
   - title: "Research"
-    url: /#research
+    url: /publications/
 
   - title: "Writing"
     url: /year-archive/
