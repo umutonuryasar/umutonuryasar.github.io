@@ -3,19 +3,20 @@ title: "MicroCLIP — Testing SigLIP at Small Scale"
 excerpt: "A from-scratch CLIP-style system for testing whether SigLIP's reported small-batch advantage over softmax persists in a controlled, single-GPU regime."
 collection: portfolio
 author_profile: false
+share: false
 ---
 
 ## Overview
 
-**MicroCLIP** is a from-scratch CLIP-style vision-language system built around one controlled question: whether the SigLIP sigmoid objective retains its reported small-batch advantage over softmax InfoNCE at small scale.
+**MicroCLIP** is a from-scratch CLIP-style vision-language system built as a compact experimental platform for controlled contrastive-learning studies under a single-GPU budget.
 
-The system pairs a **ResNet-18 image encoder** with a **4-layer Transformer text encoder implemented from scratch**, a 16K BPE tokenizer trained on COCO captions, and a shared normalized embedding space. The full experiment was designed to fit within a single-GPU budget while remaining cheap enough to repeat across losses, batch sizes, and random seeds.
+The system pairs a **ResNet-18 image encoder** with a **4-layer Transformer text encoder implemented from scratch**, a 16K BPE tokenizer trained on COCO captions, and a shared normalized embedding space. Its scale makes repeated experiments across objectives, batch sizes, and random seeds practical rather than treating the implementation itself as the result.
 
 ## Research Question
 
 > Does the SigLIP sigmoid objective retain its reported small-batch advantage over softmax InfoNCE at small scale?
 
-Rather than treating the implementation itself as the result, MicroCLIP uses it as an experimental harness for comparing the two objectives under the same architecture, data, training recipe, and evaluation pipeline.
+The comparison holds the architecture, data, training recipe, and evaluation pipeline fixed so that the learning objective is the primary experimental variable.
 
 ## Experimental Setup
 
