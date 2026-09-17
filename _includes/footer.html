@@ -1,10 +1,3 @@
-{% include base_path %}
-
 <div class="portfolio-footer">
   <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
-  <nav aria-label="Footer navigation">
-    {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub ↗</a>{% endif %}
-    {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn ↗</a>{% endif %}
-    <a href="{{ base_path }}/cv/">CV</a>
-  </nav>
 </div>
