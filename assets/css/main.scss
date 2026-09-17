@@ -202,6 +202,23 @@ body { background: var(--portfolio-bg); color: var(--portfolio-text); }
   font-weight: 400;
   white-space: normal;
 }
+.page.portfolio-project .page__content .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .2rem 0 1.2rem;
+}
+.page.portfolio-project .page__content .project-tags span {
+  padding: .3rem .55rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 3px;
+  color: var(--portfolio-muted);
+  font-family: inherit;
+  font-size: .72rem;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+}
 .page.portfolio-project .page__content a {
   color: var(--portfolio-accent);
   text-decoration-thickness: 1px;
