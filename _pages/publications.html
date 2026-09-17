@@ -6,10 +6,20 @@ author_profile: false
 classes: portfolio-subpage
 ---
 
-<p class="subpage-lead">Research on efficient learning systems, with an emphasis on controlled experiments, reproducibility, and understanding when methods do or do not work.</p>
+<p class="subpage-lead">Controlled studies of efficient learning systems, with an emphasis on reproducibility, explicit controls, and understanding when methods do or do not work.</p>
+
+## Publications
 
 {% include base_path %}
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+## Technical Research
+
+### [Distilling RT-DETR on a 4 GB GPU](/rt-detr-kd/)
+
+An 11-configuration controlled study across five knowledge-distillation methods, testing transformer-specific ideas against explicit controls under a single 4 GB GPU budget.
+
+[Read the technical report →](/rt-detr-kd/)
