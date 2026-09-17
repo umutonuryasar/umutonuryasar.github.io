@@ -11,8 +11,8 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <p class="home-eyebrow">Applied AI Research Engineer</p>
-    <h1>Building and studying efficient learning systems.</h1>
-    <p class="home-intro">I work across computer vision, multimodal learning, and model efficiency — turning research questions into reproducible experiments and practical systems.</p>
+    <h1>Efficient AI, tested under real constraints.</h1>
+    <p class="home-intro">I build and study computer vision and multimodal systems, with a focus on controlled experiments, model efficiency, and reproducible engineering.</p>
     <div class="home-actions">
       <a class="home-action home-action--primary" href="#work">View selected work</a>
       <a class="home-action" href="https://github.com/umutonuryasar">GitHub ↗</a>
@@ -29,14 +29,14 @@ redirect_from:
       <article class="work-item">
         <div class="work-meta"><span>01</span><span>Multimodal Learning · Research</span></div>
         <h2><a href="/portfolio/microclip/">MicroCLIP <span aria-hidden="true">→</span></a></h2>
-        <p>A from-scratch CLIP-style vision-language project for studying contrastive learning under tight compute constraints, with controlled experiments around training behavior and retrieval.</p>
+        <p>A from-scratch CLIP-style study testing whether SigLIP's reported small-batch advantage over softmax persists at small scale; in this regime, softmax matched or outperformed sigmoid across the tested batches.</p>
         <div class="work-tags"><span>PyTorch</span><span>CLIP</span><span>Vision-Language</span></div>
       </article>
 
       <article class="work-item">
         <div class="work-meta"><span>02</span><span>Computer Vision · Technical Report</span></div>
         <h2><a href="/rt-detr-kd/">RT-DETR Knowledge Distillation <span aria-hidden="true">→</span></a></h2>
-        <p>A controlled study of knowledge distillation for RT-DETR on a 4 GB GPU. Five strategies were tested against explicit controls, including negative results that changed the interpretation of the methods.</p>
+        <p>An 11-configuration controlled study across five KD methods for RT-DETR on a 4 GB GPU, where explicit controls changed the interpretation of two transformer-specific ideas.</p>
         <div class="work-tags"><span>RT-DETR</span><span>Knowledge Distillation</span><span>Low-VRAM</span></div>
       </article>
 
@@ -52,7 +52,7 @@ redirect_from:
   <section class="home-section" id="research">
     <div class="home-section-heading">
       <p class="home-kicker">Research</p>
-      <p class="home-section-note">Published and ongoing work.</p>
+      <p class="home-section-note">Independent research and publications.</p>
     </div>
     <article class="research-feature">
       <div>
@@ -73,15 +73,15 @@ redirect_from:
       <p class="home-section-note">Contributions upstream.</p>
     </div>
     <div class="oss-list">
-      <a class="oss-item" href="https://github.com/huggingface/peft/pull/3293"><span><strong>Hugging Face PEFT</strong><small>CUDA memory caching fix</small></span><span class="oss-status">PR #3293 · Merged ↗</span></a>
-      <a class="oss-item" href="https://github.com/andrewyng/aisuite/pull/319"><span><strong>aisuite</strong><small>Open-source contribution</small></span><span class="oss-status">PR #319 · Merged ↗</span></a>
+      <a class="oss-item" href="https://github.com/huggingface/peft/pull/3293"><span><strong>Hugging Face PEFT</strong><small>Memory-cache fix for k-bit training, with XPU support</small></span><span class="oss-status">PR #3293 · Merged ↗</span></a>
+      <a class="oss-item" href="https://github.com/andrewyng/aisuite/pull/319"><span><strong>aisuite</strong><small>Python 3.14 compatibility via dependency constraint fix</small></span><span class="oss-status">PR #319 · Merged ↗</span></a>
     </div>
   </section>
 
   <section class="home-section home-about" id="about">
     <div class="home-section-heading"><p class="home-kicker">About</p></div>
     <div class="about-grid">
-      <p>I am an Applied AI Research Engineer with an Electrical &amp; Electronics Engineering background. I am interested in efficient learning, computer vision, multimodal models, and the engineering required to turn experiments into reliable systems.</p>
+      <p>My background is in Electrical &amp; Electronics Engineering; my current work is independent applied-AI research spanning efficient learning, computer vision, and multimodal models. I work from research question to controlled experiment to implementation, with an emphasis on reproducibility and practical constraints.</p>
       <p class="about-secondary">Based in Ankara, Türkiye. Open to research engineering roles, collaborations, and technically ambitious applied AI work.</p>
     </div>
     <div class="home-contact">
