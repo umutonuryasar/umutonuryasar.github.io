@@ -8,7 +8,7 @@ redirect_from:
   - /resume
 ---
 
-<p class="subpage-lead">Applied AI research engineering across efficient learning, computer vision, and multimodal systems, with an emphasis on controlled experiments and reproducible engineering.</p>
+<p class="subpage-lead">Applied AI research engineering in computer vision and model efficiency, with controlled multi-seed experiments carried from hypothesis through evaluation and deployment benchmarking.</p>
 
 [Download PDF](/files/cv_umut_onur_yasar.pdf){: .btn .btn--primary}
 

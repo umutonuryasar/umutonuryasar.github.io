@@ -1,6 +1,6 @@
 education:
   - degree: "B.Sc. in Electrical and Electronics Engineering"
-    institution: "Abant İzzet Baysal University"
+    institution: "Bolu Abant İzzet Baysal University"
     year: "2011 – 2020"
 
 experience:
@@ -9,55 +9,53 @@ experience:
     period: "Mar 2025 – Present"
     location: "Ankara, Türkiye"
     description:
-      - "Conduct independent research on efficient learning for computer vision and multimodal systems, emphasizing controlled experiments and reproducible engineering."
-      - "First-author arXiv preprint on student-capacity effects in knowledge distillation across ResNet teacher–student pairs."
-      - "Completed a controlled RT-DETR distillation study across 11 configurations and five KD methods under a 4 GB GPU budget."
-      - "Built MicroCLIP from scratch to test sigmoid versus softmax contrastive objectives across batch sizes and repeated seeds."
+      - "Conduct independent research in computer vision and model efficiency, designing controlled multi-seed experiments and carrying work from hypothesis through evaluation and deployment benchmarking."
+      - "First-author arXiv preprint on student-capacity effects in knowledge distillation across four ResNet teacher–student pairs."
+      - "Completed a controlled RT-DETR distillation study: five KD method families, eight loss variants, 11 configurations on a 4 GB GPU; fp16 student runs at 160.8 FPS with no mAP loss."
+      - "Built MicroCLIP from scratch to test sigmoid versus softmax contrastive objectives across batch sizes and seeds; shipped as an in-browser int8 ONNX demo with all 20 trained checkpoints public."
 
   - role: "AI Trainer"
     company: "Outlier"
     period: "May 2024 – Feb 2025"
-    location: "Ankara, Türkiye (Remote)"
+    location: "Remote"
     description:
-      - "Worked on large-language-model training and evaluation workflows involving human feedback and high-quality data generation."
-      - "Contributed to prompt and response evaluation across technically demanding tasks."
-      - "Collaborated in model-quality workflows focused on correctness, usefulness, and safety."
+      - "Evaluated and ranked LLM outputs for RLHF-oriented data pipelines."
+      - "Authored and reviewed prompts, reference responses, and technical evaluations across programming, mathematics, and engineering."
 
-  - role: "Computer Vision Intern"
-    company: "HAVELSAN"
-    period: "Aug 2015 – Sep 2015"
+  - role: "Freelance Software Engineer"
+    company: "Self-Employed"
+    period: "2020 – 2024"
     location: "Ankara, Türkiye"
     description:
-      - "Developed a flight simulation interface using Python."
-      - "Applied OpenCV in computer vision projects."
-      - "Conducted research on the Robot Operating System (ROS)."
+      - "Project-based signal processing and RF software for clients, from algorithm prototyping to C++/Qt desktop tools."
 
-  - role: "Avionics Intern"
-    company: "Turkish Aerospace Industries (TAI)"
-    period: "Jun 2014 – Jul 2014"
+  - role: "Engineering Internships"
+    company: "HAVELSAN · TAI — Turkish Aerospace"
+    period: "2014 – 2015"
     location: "Ankara, Türkiye"
     description:
-      - "Developed an image recognition system in MATLAB for identifying helicopter landing zones."
-      - "Created a 3D model of helicopter electrical cable placement using CATIA."
-      - "Contributed to the avionics harness design process."
+      - "HAVELSAN (2015): Python and OpenCV vision components for a flight-simulation interface."
+      - "TAI — Avionics (2014): MATLAB computer-vision prototype for helicopter landing-zone detection."
 
 opensource:
   - name: "Hugging Face PEFT — PR #3293"
     link: "https://github.com/huggingface/peft/pull/3293"
-    description: "Fixed a CUDA memory caching issue; reviewed and merged upstream."
+    description: "Fixed CUDA allocator overhead in prepare_model_for_kbit_training: temporary fp16-to-fp32 casts left ~1 GB of reserved-but-unused CUDA memory on constrained devices. Merged upstream."
   - name: "aisuite — PR #319"
     link: "https://github.com/andrewyng/aisuite/pull/319"
-    description: "Open-source contribution reviewed and merged upstream."
+    description: "Restored Python 3.14 compatibility by relaxing the docstring-parser constraint that pulled in removed AST APIs. Merged upstream."
 
 skills:
-  - category: "ML / Deep Learning"
-    items: "PyTorch · Transformers · OpenCV · NumPy · scikit-learn"
-  - category: "Research"
-    items: "Knowledge Distillation · Contrastive Learning · Object Detection · Multimodal Learning · PEFT"
-  - category: "Engineering"
-    items: "Python · FastAPI · Docker · CUDA · Git · Linux"
-  - category: "Additional"
-    items: "C++ · MATLAB"
+  - category: "ML"
+    items: "Computer Vision · Vision–Language Models · Transformers · Contrastive Learning · Knowledge Distillation"
+  - category: "Efficiency"
+    items: "PEFT & LoRA · int8 Quantization · Mixed Precision · Memory Optimization · Inference Benchmarking"
+  - category: "Tools"
+    items: "PyTorch · Hugging Face Transformers & PEFT · OpenCV · NumPy · CUDA · ONNX · FastAPI · Docker · Linux"
+  - category: "Programming"
+    items: "Python · C/C++ (Qt) · Bash · MATLAB · Git · CI & Testing · Digital Signal Processing"
+  - category: "Languages"
+    items: "Turkish (native) · English (full professional proficiency)"
 
 certifications:
   - name: "IBM AI Engineering Professional Certificate"
