@@ -11,8 +11,8 @@ redirect_from:
 <div class="home-shell">
   <section class="home-hero">
     <p class="home-eyebrow">Applied AI Research Engineer</p>
-    <h1>Efficient AI, tested under real constraints.</h1>
-    <p class="home-intro">I build and study computer vision and multimodal systems, with a focus on controlled experiments, model efficiency, and reproducible engineering.</p>
+    <h1>Vision–language models, built from scratch and tested with controlled experiments.</h1>
+    <p class="home-intro">I build and study vision–language and computer vision models, with a focus on reproducible engineering and model efficiency.</p>
     <div class="home-actions">
       <a class="home-action home-action--primary" href="#work">View selected work</a>
       <a class="home-action" href="https://github.com/umutonuryasar">GitHub ↗</a>
@@ -30,6 +30,7 @@ redirect_from:
         <div class="work-meta"><span>01</span><span>Multimodal Learning · Research</span></div>
         <h2><a href="/portfolio/microclip/">MicroCLIP <span aria-hidden="true">→</span></a></h2>
         <p>A from-scratch CLIP-style study testing whether SigLIP's reported small-batch advantage over softmax persists at small scale; in this regime, softmax matched or outperformed sigmoid across the tested batches.</p>
+        <p><a href="https://huggingface.co/spaces/umutonuryasar/microclip">Live demo ↗</a> · <a href="https://github.com/umutonuryasar/microclip">Code ↗</a></p>
         <div class="work-tags"><span>PyTorch</span><span>CLIP</span><span>Vision-Language</span></div>
       </article>
 
@@ -73,7 +74,7 @@ redirect_from:
       <p class="home-section-note">Contributions upstream.</p>
     </div>
     <div class="oss-list">
-      <a class="oss-item" href="https://github.com/huggingface/peft/pull/3293"><span><strong>Hugging Face PEFT</strong><small>Memory-cache fix for k-bit training, with XPU support</small></span><span class="oss-status">PR #3293 · Merged ↗</span></a>
+      <a class="oss-item" href="https://github.com/huggingface/peft/pull/3293"><span><strong>Hugging Face PEFT</strong><small>Memory-cache fix for k-bit training preparation</small></span><span class="oss-status">PR #3293 · Merged ↗</span></a>
       <a class="oss-item" href="https://github.com/andrewyng/aisuite/pull/319"><span><strong>aisuite</strong><small>Python 3.14 compatibility via dependency constraint fix</small></span><span class="oss-status">PR #319 · Merged ↗</span></a>
     </div>
   </section>
@@ -81,7 +82,7 @@ redirect_from:
   <section class="home-section home-about" id="about">
     <div class="home-section-heading"><p class="home-kicker">About</p></div>
     <div class="about-grid">
-      <p>My background is in Electrical &amp; Electronics Engineering; my current work is independent applied-AI research spanning efficient learning, computer vision, and multimodal models. I work from research question to controlled experiment to implementation, with an emphasis on reproducibility and practical constraints.</p>
+      <p>My background is in Electrical &amp; Electronics Engineering; my current work is independent applied-AI research on vision–language models and computer vision, with a background in model efficiency. I work from research question to controlled experiment to implementation, with an emphasis on reproducibility and practical constraints.</p>
       <p class="about-secondary">Based in Ankara, Türkiye. Open to research engineering roles, collaborations, and technically ambitious applied AI work.</p>
     </div>
     <div class="home-contact">

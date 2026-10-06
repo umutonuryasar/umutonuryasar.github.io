@@ -8,7 +8,7 @@ redirect_from:
   - /resume
 ---
 
-<p class="subpage-lead">Applied AI research engineering in computer vision and model efficiency, with controlled multi-seed experiments carried from hypothesis through evaluation and deployment benchmarking.</p>
+<p class="subpage-lead">Applied AI research engineering in computer vision and vision–language models, with a background in model efficiency and controlled multi-seed experiments carried from hypothesis to deployment.</p>
 
 [Download PDF](/files/cv_umut_onur_yasar.pdf){: .btn .btn--primary}
 

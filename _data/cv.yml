@@ -9,10 +9,10 @@ experience:
     period: "Mar 2025 – Present"
     location: "Ankara, Türkiye"
     description:
-      - "Conduct independent research in computer vision and model efficiency, designing controlled multi-seed experiments and carrying work from hypothesis through evaluation and deployment benchmarking."
+      - "Conduct independent research in computer vision and vision–language models, designing controlled multi-seed experiments and carrying work from hypothesis through evaluation and deployment benchmarking."
+      - "Built MicroCLIP from scratch to test sigmoid versus softmax contrastive objectives across batch sizes and seeds; shipped as an in-browser int8 ONNX demo with all 20 trained checkpoints public."
       - "First-author arXiv preprint on student-capacity effects in knowledge distillation across four ResNet teacher–student pairs."
       - "Completed a controlled RT-DETR distillation study: five KD method families, eight loss variants, 11 configurations on a 4 GB GPU; fp16 student runs at 160.8 FPS with no mAP loss."
-      - "Built MicroCLIP from scratch to test sigmoid versus softmax contrastive objectives across batch sizes and seeds; shipped as an in-browser int8 ONNX demo with all 20 trained checkpoints public."
 
   - role: "AI Trainer"
     company: "Outlier"
@@ -24,7 +24,7 @@ experience:
 
   - role: "Freelance Software Engineer"
     company: "Self-Employed"
-    period: "2020 – 2024"
+    period: "Sep 2023 – Feb 2025"
     location: "Ankara, Türkiye"
     description:
       - "Project-based signal processing and RF software for clients, from algorithm prototyping to C++/Qt desktop tools."
@@ -40,7 +40,7 @@ experience:
 opensource:
   - name: "Hugging Face PEFT — PR #3293"
     link: "https://github.com/huggingface/peft/pull/3293"
-    description: "Fixed CUDA allocator overhead in prepare_model_for_kbit_training: temporary fp16-to-fp32 casts left ~1 GB of reserved-but-unused CUDA memory on constrained devices. Merged upstream."
+    description: "Released allocator-cached memory after the fp16-to-fp32 casts in prepare_model_for_kbit_training; the issue reporter measured ~480 MB lower post-call reserved memory on an 8 GB Jetson Orin Nano. Merged upstream."
   - name: "aisuite — PR #319"
     link: "https://github.com/andrewyng/aisuite/pull/319"
     description: "Restored Python 3.14 compatibility by relaxing the docstring-parser constraint that pulled in removed AST APIs. Merged upstream."

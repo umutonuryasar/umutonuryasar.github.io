@@ -7,6 +7,8 @@ author_profile: false
 share: false
 ---
 
+[GitHub Repository](https://github.com/umutonuryasar/microclip) · [Live demo (Hugging Face Space)](https://huggingface.co/spaces/umutonuryasar/microclip)
+
 ## Overview
 
 **MicroCLIP** is a from-scratch CLIP-style vision-language system built as a compact experimental platform for controlled contrastive-learning studies under a single-GPU budget.
