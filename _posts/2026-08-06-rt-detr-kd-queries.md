@@ -23,7 +23,7 @@ tags:
 The principled fix for Query-KD in RT-DETR was prediction-space Hungarian matching. I implemented it, expected it to win, and it lost — reproducibly. Here's what the control taught me.
 
 ---
-Part two of a series on distilling RT-DETR on a single 4 GB GPU. This one is about a fix I was confident in — and the control run that proved me wrong.
+Part two of a series on distilling RT-DETR for a single 4 GB GPU. This one is about a fix I was confident in — and the control run that proved me wrong.
 
 ## The bug I found
 

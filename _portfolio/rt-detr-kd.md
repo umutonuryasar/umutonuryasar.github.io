@@ -1,6 +1,6 @@
 ---
-title: "Distilling RT-DETR on a 4 GB GPU"
-excerpt: "A controlled RT-DETR distillation study: 11 configurations across five KD methods, with transformer-specific ideas tested against controls on a single 4 GB GPU."
+title: "Distilling RT-DETR for a 4 GB GPU"
+excerpt: "A controlled RT-DETR distillation study: 11 configurations across five KD methods, with transformer-specific ideas tested against controls under a 4 GB GPU budget."
 collection: portfolio
 classes: portfolio-project
 author_profile: false
@@ -9,7 +9,7 @@ share: false
 
 ## Overview
 
-This project asks a practical question: **which knowledge-distillation mechanisms actually help a lightweight RT-DETR student when the entire study has to fit on a 4 GB GPU?**
+This project asks a practical question: **which knowledge-distillation mechanisms actually help a lightweight RT-DETR student when the student and the teacher–student training path have to fit a 4 GB GPU?** Ablation runs executed on a Colab A100; the 4 GB card set the memory budget and hosted the deployment benchmarks.
 
 I built an **11-configuration controlled ablation across five KD methods**, including two transformer-specific contributions — Query-KD and Stage-Adaptive KD — and paired the central hypotheses with controls designed to isolate the mechanism being tested.
 
@@ -17,7 +17,7 @@ The useful result was not that a new method won. The controls changed the interp
 
 ## Experimental Design
 
-The teacher is a ResNet-50 RT-DETR trained in the same setup; the student uses a ResNet-18 backbone with 15.9M parameters. Training uses a 30K COCO subset at 512 px, with a 2.5K selection split carved from the training pool so that COCO val2017 does not drive checkpoint selection.
+The teacher is a ResNet-50 RT-DETR trained here on full COCO (36 epochs, 512 px, 0.142 mAP); the student uses a ResNet-18 backbone with 15.9M parameters. Student training uses a 30K COCO subset at 512 px, with a 2.5K selection split carved from the training pool so that COCO val2017 does not drive checkpoint selection.
 
 The study covers **Logit-KD, Feature-KD, Channel-Wise Distillation (CWD), Query-KD, and Stage-Adaptive KD**. Four headline configurations are repeated at seeds 42/43/44; the remaining runs are treated as single-seed observations rather than ranked evidence.
 
@@ -60,7 +60,7 @@ For this model, fp16 gives **1.68× throughput and 42% lower peak memory with no
 
 ## Interpretation & Limits
 
-The project is a **budget-regime study**, not a claim about RT-DETR distillation in general. It uses one teacher, a 30K COCO subset, 512 px inputs, and three seeds only for the configurations carrying the main claims. Absolute detection quality is intentionally modest; the value of the study is in matched controls, leakage-free model selection, measured variance, and reporting negative results rather than optimizing them away.
+The project is a **budget-regime study**, not a claim about RT-DETR distillation in general. It uses one teacher, a 30K COCO subset for the students, 512 px inputs, and three seeds only for the configurations carrying the main claims. Absolute detection quality is intentionally modest; the value of the study is in matched controls, leakage-free model selection, measured variance, and reporting negative results rather than optimizing them away.
 
 The main lesson is methodological: plausible transformer-specific mechanisms can look convincing until the control isolates what is actually producing the gain. Here, Hungarian query alignment did not survive that test, and the apparent curriculum effect reduced to distillation-weight magnitude.
 
@@ -77,5 +77,5 @@ The main lesson is methodological: plausible transformer-specific mechanisms can
 
 ## Links
 
-- **Technical report:** [Distilling RT-DETR on a 4 GB GPU](/rt-detr-kd/)
+- **Technical report:** [Distilling RT-DETR for a 4 GB GPU](/rt-detr-kd/)
 - **Repository:** [github.com/umutonuryasar/rt-detr-kd](https://github.com/umutonuryasar/rt-detr-kd)

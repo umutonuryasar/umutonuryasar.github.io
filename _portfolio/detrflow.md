@@ -25,17 +25,21 @@ A key part of the project is implementing the detector-side training mechanics r
 
 **Hungarian matching** is implemented using a cost that combines classification probability, L1 box distance, and generalized IoU before solving the bipartite assignment with `linear_sum_assignment`. **SetCriterion** then computes the matched classification, L1, and GIoU losses, including explicit no-object weighting.
 
-The training path adds bf16 mixed precision, gradient accumulation, cosine learning-rate scheduling, checkpointing, and resume support around the RT-DETR model. These pieces make the repository useful both as a transparent implementation reference and as a base for controlled detector experiments.
+The training path adds bf16 mixed precision, gradient accumulation, cosine learning-rate scheduling, checkpointing, and resume support around the RT-DETR model. It is experimental: see the evaluation section for its current status.
 
 ## Evaluation & Benchmarking
 
-The pretrained RT-DETR-R50 checkpoint is evaluated on the **COCO 2017 validation split (5,000 images)** using the standard COCO detection metrics. The reproduced baseline reaches **47.9 AP**, with AP50 of 64.2 and AP75 of 52.0.
+The pretrained RT-DETR-R50 checkpoint is evaluated on the **COCO 2017 validation split (5,000 images)** using the standard COCO detection metrics. The reproduced baseline reaches **53.1 AP**, matching the official RT-DETR-R50 result, with AP50 of 71.2 and AP75 of 57.7.
 
 | Model | Dataset | AP | AP50 | AP75 |
 | --- | --- | ---: | ---: | ---: |
-| RT-DETR-R50 pretrained | COCO val2017 | **47.9** | 64.2 | 52.0 |
+| RT-DETR-R50 pretrained | COCO val2017 | **53.1** | 71.2 | 57.7 |
 
-This is a **pretrained-baseline evaluation**, not a claim that DETRFlow improves the underlying RT-DETR model. The repository also contains a configurable fine-tuning path, but no completed fine-tuned result is presented here.
+This is a **pretrained-baseline evaluation**, not a claim that DETRFlow improves the underlying RT-DETR model.
+
+**Evaluation fix (Nov 2026).** The evaluation first reported 47.9 AP. The gap traced to category mapping: the checkpoint uses VOC-style names for 6 of the 80 classes (`motorbike`, `aeroplane`, `sofa`, …), and a name lookup silently scored those predictions as other categories. A precision hypothesis (bf16 evaluation) was tested first and ruled out; mapping labels by position fixed the gap, and a unit test now covers it.
+
+The repository also contains an experimental fine-tuning path. It does not currently run end to end, and its criterion is a DETR-style reference rather than RT-DETR's loss, so no fine-tuned result is presented here.
 
 Benchmark tooling measures warm-start inference latency, p50/p95/p99 latency, throughput, and peak GPU memory, with FP16 support. Because these measurements depend strongly on hardware and runtime configuration, the repository retains the detailed benchmark output and commands rather than treating one machine-specific FPS number as a general model result.
 
@@ -57,7 +61,7 @@ Several choices are deliberately aimed at keeping the system inspectable and reu
 
 ## Relationship to RT-DETR KD
 
-DETRFlow provides the engineering foundation for the separate **RT-DETR knowledge-distillation study**: model loading, evaluation, detector losses, matching, and constrained-hardware experimentation all build on the same underlying RT-DETR workflow.
+DETRFlow covers the inference, evaluation and serving side of RT-DETR. The **RT-DETR knowledge-distillation study** is a separate codebase with its own training and distillation code.
 
 The distillation work is presented separately because its evidence is experimental rather than systems-oriented. See the [RT-DETR Knowledge Distillation technical report](/rt-detr-kd/) for the controlled KD experiments and results.
 

@@ -1,5 +1,5 @@
 ---
-title: "What I Learned Distilling RT-DETR on a 4 GB GPU"
+title: "What I Learned Distilling RT-DETR for a 4 GB GPU"
 date: 2026-08-06
 permalink: /posts/2026/08/rt-detr-kd-what-i-learned/
 hidden: true
@@ -25,7 +25,7 @@ An end-to-end knowledge distillation study on a single RTX 3050. Three novel cla
 
 ---
 
-The final post in this series. I set out to distill RT-DETR into a smaller student on a 4 GB RTX 3050 laptop GPU, on a 30K COCO subset, as a self-contained tech report. I had three ideas I wanted to demonstrate. All three lost to their controls. That became the report.
+The final post in this series. I set out to distill RT-DETR into a smaller student sized for a 4 GB RTX 3050 laptop GPU, on a 30K COCO subset, as a self-contained tech report. (Ablation runs executed on a Colab A100; the 4 GB card set the memory budget and hosted the deployment benchmarks.) I had three ideas I wanted to demonstrate. All three lost to their controls. That became the report.
 
 ## Three claims, three controls
 

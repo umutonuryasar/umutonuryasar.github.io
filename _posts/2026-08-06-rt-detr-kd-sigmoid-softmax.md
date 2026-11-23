@@ -168,7 +168,7 @@ Run the control. Especially when you are sure.
 
 ---
 
-*Part of a series on distilling RT-DETR on a 4 GB GPU. Code, full ablation
+*Part of a series on distilling RT-DETR for a 4 GB GPU. Code, full ablation
 tables and limitations: [github.com/umutonuryasar/rt-detr-kd](https://github.com/umutonuryasar/rt-detr-kd).
 Next: what happened when I argued that decoder queries need proper matching —
 and ran that control too.*

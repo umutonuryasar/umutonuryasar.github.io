@@ -37,14 +37,14 @@ redirect_from:
       <article class="work-item">
         <div class="work-meta"><span>02</span><span>Computer Vision · Technical Report</span></div>
         <h2><a href="/rt-detr-kd/">RT-DETR Knowledge Distillation <span aria-hidden="true">→</span></a></h2>
-        <p>An 11-configuration controlled study across five KD methods for RT-DETR on a 4 GB GPU, where explicit controls changed the interpretation of two transformer-specific ideas.</p>
+        <p>An 11-configuration controlled study across five KD methods for RT-DETR under a 4 GB GPU budget, where explicit controls changed the interpretation of two transformer-specific ideas.</p>
         <div class="work-tags"><span>RT-DETR</span><span>Knowledge Distillation</span><span>Low-VRAM</span></div>
       </article>
 
       <article class="work-item">
         <div class="work-meta"><span>03</span><span>Computer Vision · Engineering</span></div>
         <h2><a href="/portfolio/detrflow/">DETRFlow <span aria-hidden="true">→</span></a></h2>
-        <p>An end-to-end RT-DETR object detection pipeline reproducing the pretrained COCO baseline, with inference APIs, deployment, and benchmarking built around a reproducible workflow.</p>
+        <p>An end-to-end RT-DETR object detection pipeline that reproduces the official 53.1 AP COCO baseline, with inference APIs, deployment, and benchmarking built around a reproducible workflow.</p>
         <div class="work-tags"><span>Object Detection</span><span>FastAPI</span><span>Deployment</span></div>
       </article>
     </div>

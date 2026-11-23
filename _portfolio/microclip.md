@@ -40,7 +40,7 @@ The clearest signal is image-to-text Recall@10:
 | Sigmoid | 128 | 3 | 44.3 ± 2.0 |
 | Softmax | 128 | 3 | **47.7 ± 0.3** |
 
-Softmax leads by roughly **2.5 points at batch 512** and **3.4 points at batch 128**. The gap therefore widens rather than shrinks as batch size drops within this regime. Sigmoid is also substantially less stable at batch 128, with higher seed-to-seed variance across the retrieval metrics.
+Softmax leads by **2.5 points at batch 512**, about 11× the larger seed std (Welch *p* < 0.001). At batch 128 the point gap is larger (3.3) but not significant (*p* ≈ 0.10), because sigmoid's seed-to-seed spread grows about six-fold. The more reliable small-batch observation is that sigmoid becomes much less stable.
 
 Batch size itself shows no strong effect between 128 and 512 for either objective. The batch-256 runs are single-seed, so they are not used to make an optimal-batch claim.
 

@@ -6,13 +6,14 @@ education:
 experience:
   - role: "Applied AI Research Engineer"
     company: "Independent Researcher"
-    period: "Mar 2025 – Present"
+    period: "Oct 2025 – Present"
     location: "Ankara, Türkiye"
     description:
       - "Conduct independent research in computer vision and vision–language models, designing controlled multi-seed experiments and carrying work from hypothesis through evaluation and deployment benchmarking."
       - "Built MicroCLIP from scratch to test sigmoid versus softmax contrastive objectives across batch sizes and seeds; shipped as an in-browser int8 ONNX demo with all 20 trained checkpoints public."
       - "First-author arXiv preprint on student-capacity effects in knowledge distillation across four ResNet teacher–student pairs."
-      - "Completed a controlled RT-DETR distillation study: five KD method families, eight loss variants, 11 configurations on a 4 GB GPU; fp16 student runs at 160.8 FPS with no mAP loss."
+      - "Traced a 5 AP gap in DETRFlow's COCO evaluation to a silent label-mapping bug (6 of 80 classes); the fix reproduces the official 53.1 AP."
+      - "Completed a controlled RT-DETR distillation study: five KD method families, eight loss variants, 11 configurations under a 4 GB GPU budget; fp16 student runs at 160.8 FPS on a 4 GB RTX 3050 with no mAP loss."
 
   - role: "AI Trainer"
     company: "Outlier"
@@ -49,7 +50,7 @@ skills:
   - category: "ML"
     items: "Computer Vision · Vision–Language Models · Transformers · Contrastive Learning · Knowledge Distillation"
   - category: "Efficiency"
-    items: "PEFT & LoRA · int8 Quantization · Mixed Precision · Memory Optimization · Inference Benchmarking"
+    items: "PEFT & LoRA · int8 ONNX Quantization · Mixed Precision · Memory Optimization · Inference Benchmarking"
   - category: "Tools"
     items: "PyTorch · Hugging Face Transformers & PEFT · OpenCV · NumPy · CUDA · ONNX · FastAPI · Docker · Linux"
   - category: "Programming"
