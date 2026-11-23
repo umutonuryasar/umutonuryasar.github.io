@@ -20,8 +20,7 @@ experience:
     period: "May 2024 – Feb 2025"
     location: "Remote"
     description:
-      - "Evaluated and ranked LLM outputs for RLHF-oriented data pipelines."
-      - "Authored and reviewed prompts, reference responses, and technical evaluations across programming, mathematics, and engineering."
+      - "Evaluated and ranked LLM outputs to produce preference data for RLHF pipelines."
 
   - role: "Freelance Software Engineer"
     company: "Self-Employed"
